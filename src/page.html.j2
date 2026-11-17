@@ -80,21 +80,6 @@
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="o-nama" class="about">
-  <div class="wrap">
-    <figure class="about-photo">
-      <img src="{{ root }}assets/img/haris.jpg" alt="{{ t.aboutAlt }}" width="800" height="1000" loading="lazy">
-    </figure>
-    <div class="about-copy">
-      <p class="eyebrow" style="margin-bottom:16px">{{ t.aboutEyebrow }}</p>
-      <h2 class="h-md">{{ t.aboutTitle }}</h2>
-      {% for p in t.aboutParas %}<p class="about-p">{{ p }}</p>{% endfor %}
-      <p class="about-sign"><strong>{{ t.aboutSign }}</strong><span>{{ t.aboutRole }}</span></p>
-    </div>
-  </div>
-</section>
-
 <!-- WEB -->
 <div class="light">
 <section id="web" class="wrap section">
@@ -241,10 +226,23 @@
         <p class="eyebrow" style="margin-bottom:8px">{{ t.gearEyebrow }}</p>
         <h3 class="h-sm" style="margin-bottom:28px">{{ t.gearTitle }}</h3>
         <div class="stack">
-          <div class="box"><p class="gear-label">{{ t.gearCamLabel }}</p><p class="gear-name">Canon C100 II</p><p class="muted" style="margin-top:6px;font-weight:300">{{ t.gearCam }}</p></div>
-          <div class="box"><p class="gear-label">{{ t.gearDroneLabel }}</p><p class="gear-name">DJI Mini 5 Pro</p><p class="muted" style="margin-top:6px;font-weight:300">{{ t.gearDrone }}</p></div>
+          <div class="box gear"><img src="{{ root }}assets/img/gear-c100.jpg" alt="Canon C100 Mark II" width="406" height="376" loading="lazy"><div><p class="gear-label">{{ t.gearCamLabel }}</p><p class="gear-name">Canon C100 II</p><p class="muted" style="margin-top:6px;font-weight:300">{{ t.gearCam }}</p></div></div>
+          <div class="box gear"><img src="{{ root }}assets/img/gear-mini5.jpg" alt="DJI Mini 5 Pro" width="394" height="353" loading="lazy"><div><p class="gear-label">{{ t.gearDroneLabel }}</p><p class="gear-name">DJI Mini 5 Pro</p><p class="muted" style="margin-top:6px;font-weight:300">{{ t.gearDrone }}</p></div></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="o-nama" class="about">
+  <div class="wrap">
+    <img class="about-avatar" src="{{ root }}assets/img/haris.jpg" alt="{{ t.aboutAlt }}" width="800" height="1000" loading="lazy">
+    <div class="about-copy">
+      <p class="eyebrow" style="margin-bottom:10px">{{ t.aboutEyebrow }}</p>
+      <h2 class="about-h">{{ t.aboutTitle }}</h2>
+      {% for p in t.aboutParas %}<p class="about-p">{{ p }}</p>{% endfor %}
+      <p class="about-sign"><strong>{{ t.aboutSign }}</strong> · <span>{{ t.aboutRole }}</span></p>
     </div>
   </div>
 </section>
