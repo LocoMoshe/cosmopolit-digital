@@ -28,7 +28,7 @@ Phone, email and the site's domain are set at the top of `src/build.py`.
 ## Still to fill in
 
 - Website prices: `[CIJENA]` / `[PRICE]` in `src/content.py`
-- Email: `email=None` in `src/build.py` (the button appears once it's set)
+- Email: info@cosmopolitdigital.com, forwarded to cosmopolit.digital@gmail.com via Cloudflare Email Routing
 - Domain: cosmopolitdigital.com (set as `site_url` in `src/build.py`)
 
 ## Deploy (Cloudflare Pages)

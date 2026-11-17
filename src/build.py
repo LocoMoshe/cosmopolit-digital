@@ -19,7 +19,7 @@ SETTINGS = dict(
     site_url="https://cosmopolitdigital.com",
     phone="062 897 216",
     phone_intl="38762897216",
-    email="cosmopolit.digital@gmail.com",  # switch to info@<domain> once the domain exists
+    email="info@cosmopolitdigital.com",  # forwards to cosmopolit.digital@gmail.com (Cloudflare Email Routing)
     year=datetime.date.today().year,
 )
 
