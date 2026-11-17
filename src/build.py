@@ -11,6 +11,7 @@ import pathlib
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 import content
+import content_dzemati
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
@@ -37,11 +38,17 @@ def main():
     env = Environment(loader=FileSystemLoader(ROOT / "src"), autoescape=True,
                       undefined=StrictUndefined, trim_blocks=True, lstrip_blocks=True)
     tpl = env.get_template("page.html.j2")
-    pages = [(content.BS, content.BS_DATA, PUBLIC / "index.html", ""),
-             (content.EN, content.EN_DATA, PUBLIC / "en" / "index.html", "../")]
-    for t, d, out, root in pages:
+    pages = [(content.BS, content.BS_DATA, PUBLIC / "index.html", "", "dzemati/"),
+             (content.EN, content.EN_DATA, PUBLIC / "en" / "index.html", "../", "dzemati/")]
+    for t, d, out, root, dz_href in pages:
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(tpl.render(t=t, d=d, root=root, **SETTINGS, **SNIPPETS), encoding="utf-8")
+        out.write_text(tpl.render(t=t, d=d, root=root, dz_href=dz_href, **SETTINGS, **SNIPPETS), encoding="utf-8")
+        print("wrote", out.relative_to(ROOT))
+    dz = env.get_template("dzemati.html.j2")
+    for t, out, root, home in [(content_dzemati.BS, PUBLIC / "dzemati" / "index.html", "../", "../"),
+                               (content_dzemati.EN, PUBLIC / "en" / "dzemati" / "index.html", "../../", "../")]:
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(dz.render(t=t, root=root, home=home, **SETTINGS, **SNIPPETS), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
 
 

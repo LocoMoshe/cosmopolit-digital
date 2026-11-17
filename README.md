@@ -12,7 +12,8 @@ public/            ← the live site (this is what gets deployed)
   assets/fonts/    ← Poppins, self-hosted (no Google Fonts, GDPR-friendly)
   assets/img/      ← logo, project screenshots, share image
 src/
-  content.py       ← ALL page text, both languages. Edit copy here.
+  content.py       ← homepage text, both languages
+  content_dzemati.py ← text for the džemat page (/dzemati/)
   page.html.j2     ← the page layout (shared by both languages)
   build.py         ← generates public/index.html and public/en/index.html
 ```

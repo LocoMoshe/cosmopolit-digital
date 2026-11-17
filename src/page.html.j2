@@ -34,6 +34,7 @@
       <a href="#web">{{ t.navWeb }}</a>
       <a href="#video">{{ t.navVideo }}</a>
       <a href="#radovi">{{ t.navWork }}</a>
+      <a href="{{ dz_href }}">{{ t.navDzemati }}</a>
       <a href="#kontakt">{{ t.navContact }}</a>
       <div class="nav-lang">
         {% if t.lang == 'bs' %}<span aria-current="true">BS</span><a href="{{ root }}en/" lang="en" hreflang="en">EN</a>
@@ -91,6 +92,7 @@
       <h3>{{ a.title }}</h3>
       <p class="muted">{{ a.lead }}</p>
       <ul class="checks">{% for p in a.points %}<li>{{ p }}</li>{% endfor %}</ul>
+      {% if loop.index == 2 %}<a class="link-arrow" href="{{ dz_href }}">{{ t.dzLink }} {{ arrow_sm|safe }}</a>{% endif %}
     </div>
     {% endfor %}
   </div>
