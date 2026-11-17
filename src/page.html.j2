@@ -80,6 +80,21 @@
   </div>
 </section>
 
+<!-- ABOUT -->
+<section id="o-nama" class="about">
+  <div class="wrap">
+    <figure class="about-photo">
+      <img src="{{ root }}assets/img/haris.jpg" alt="{{ t.aboutAlt }}" width="800" height="1000" loading="lazy">
+    </figure>
+    <div class="about-copy">
+      <p class="eyebrow" style="margin-bottom:16px">{{ t.aboutEyebrow }}</p>
+      <h2 class="h-md">{{ t.aboutTitle }}</h2>
+      {% for p in t.aboutParas %}<p class="about-p">{{ p }}</p>{% endfor %}
+      <p class="about-sign"><strong>{{ t.aboutSign }}</strong><span>{{ t.aboutRole }}</span></p>
+    </div>
+  </div>
+</section>
+
 <!-- WEB -->
 <div class="light">
 <section id="web" class="wrap section">
