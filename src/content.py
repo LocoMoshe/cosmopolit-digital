@@ -9,13 +9,19 @@ BS = {'lang': 'bs',
  'navWork': 'Radovi',
  'aboutEyebrow': 'O NAMA',
  'aboutTitle': 'Zašto Cosmopolit?',
- 'aboutParas': ['Rođen sam u Africi. Poslije sam živio i radio u Aziji, na Bliskom istoku i u Evropi, pa se taj naziv nekako sam nametnuo.',
-                'Kroz sve to sam shvatio da ljudi rijetko tačno znaju šta im treba. Znaju da im nešto fali ili da nešto ne radi kako treba, ali to teško opišu. Zato na početku više pitam nego što pričam.',
-                'Zanima me puno toga, od historije i nauke do tipografije i toga kako se ljudi snalaze kad otvore neku stranicu. Sve mi to pomaže da napravim nešto što je lako koristiti, a da pritom lijepo izgleda.'],
+ 'aboutParas': ['Rođen sam u Africi. Poslije sam živio i radio u Aziji, na Bliskom istoku i u Evropi, pa se '
+                'taj naziv nekako sam nametnuo.',
+                'Kroz sve to sam shvatio da ljudi rijetko tačno znaju šta im treba. Znaju da im nešto fali '
+                'ili da nešto ne radi kako treba, ali to teško opišu. Zato na početku više pitam nego što '
+                'pričam.',
+                'Zanima me puno toga, od historije i nauke do tipografije i toga kako se ljudi snalaze kad '
+                'otvore neku stranicu. Sve mi to pomaže da napravim nešto što je lako koristiti, a da pritom '
+                'lijepo izgleda.'],
  'aboutSign': 'Haris Hadrović',
  'aboutRole': 'osnivač, Cosmopolit Digital',
  'aboutAlt': 'Haris Hadrović, osnivač Cosmopolit Digitala',
- 'navDzemati': 'Za džemate', 'dzLink': 'Sve o stranici za džemate',
+ 'navDzemati': 'Za džemate',
+ 'dzLink': 'Sve o stranici za džemate',
  'navContact': 'Kontakt',
  'cta': 'Zatražite ponudu',
  'heroEyebrow': 'WEB STRANICE I VIDEO',
@@ -79,8 +85,11 @@ BS = {'lang': 'bs',
  'regular': 'redovna cijena',
  'termsTitle': 'Kako radimo',
  'terms': [{'t': 'Gotovo za 1–2 sedmice', 's': 'Zavisno od složenosti stranice.'},
-           {'t': '1/3 cijene unaprijed', 's': 'Plaća se prije početka rada. Ostatak se plaća prije prebacivanja stranice na vašu domenu i predaje admin pristupa.'},
-           {'t': 'Džemati: 3 rate bez kamate', 's': 'Prva rata prije početka rada, zadnja prije predaje stranice.'}]}
+           {'t': '1/3 cijene unaprijed',
+            's': 'Plaća se prije početka rada. Ostatak se plaća prije prebacivanja stranice na vašu domenu i '
+                 'predaje admin pristupa.'},
+           {'t': 'Džemati: 3 rate bez kamate',
+            's': 'Prva rata prije početka rada, zadnja prije predaje stranice.'}]}
 
 BS_DATA = {'audiences': [{'title': 'Stomatološke ordinacije',
                 'lead': 'Pacijent za par sekundi vidi šta radite, ko ste i kako da vas pozove.',
@@ -173,10 +182,15 @@ BS_DATA = {'audiences': [{'title': 'Stomatološke ordinacije',
                'text': '1 promo video od 30–60 sekundi + 2 reelsa od 15–20 sekundi. Do 3 sata snimanja na '
                        'jednoj lokaciji; reelsi su izvedeni iz istog materijala.',
                'badge': ''},
+              {'name': 'Mjesečni start',
+               'price': '500',
+               'text': '4 reelsa od 15–30 sekundi, jedan svake sedmice. Jedan dolazak mjesečno, do 2 sata '
+                       'snimanja na jednoj lokaciji. Za manje kafiće, salone i radnje.',
+               'badge': ''},
               {'name': 'Mjesečni sadržaj',
                'price': '800',
                'text': '6 reelsa od 15–30 sekundi i jednostavan prijedlog rasporeda objava. Jedan dolazak '
-                       'mjesečno, do 4 sata snimanja na jednoj lokaciji.',
+                       'mjesečno, do 4 sata snimanja na jednoj lokaciji. Za restorane i veće biznise.',
                'badge': ''}],
  'steps': [{'title': 'DOGOVOR', 'text': 'Cilj, ideja i plan kadrova'},
            {'title': 'SNIMANJE', 'text': 'Jedan dogovoreni termin'},
@@ -222,13 +236,19 @@ EN = {'lang': 'en',
  'navWork': 'Work',
  'aboutEyebrow': 'ABOUT',
  'aboutTitle': 'Why Cosmopolit?',
- 'aboutParas': ['I was born in Africa. Later I lived and worked in Asia, the Middle East and Europe, so the name more or less chose itself.',
-                'Along the way I noticed that people rarely know exactly what they need. They know something is missing or not working, but it is hard to put into words. So at the start I ask more than I talk.',
-                'I am interested in a lot of things, from history and science to typography and how people find their way around a web page. All of it helps me make something that is easy to use and looks good too.'],
+ 'aboutParas': ['I was born in Africa. Later I lived and worked in Asia, the Middle East and Europe, so the '
+                'name more or less chose itself.',
+                'Along the way I noticed that people rarely know exactly what they need. They know something '
+                'is missing or not working, but it is hard to put into words. So at the start I ask more '
+                'than I talk.',
+                'I am interested in a lot of things, from history and science to typography and how people '
+                'find their way around a web page. All of it helps me make something that is easy to use and '
+                'looks good too.'],
  'aboutSign': 'Haris Hadrović',
  'aboutRole': 'founder, Cosmopolit Digital',
  'aboutAlt': 'Haris Hadrović, founder of Cosmopolit Digital',
- 'navDzemati': 'For mosques', 'dzLink': 'All about websites for mosques',
+ 'navDzemati': 'For mosques',
+ 'dzLink': 'All about websites for mosques',
  'navContact': 'Contact',
  'cta': 'Get a quote',
  'heroEyebrow': 'WEBSITES AND VIDEO',
@@ -290,8 +310,11 @@ EN = {'lang': 'en',
  'regular': 'standard price',
  'termsTitle': 'How it works',
  'terms': [{'t': 'Ready in 1–2 weeks', 's': 'Depending on how complex the site is.'},
-           {'t': '1/3 paid upfront', 's': 'Paid before work starts. The rest is paid before the site goes live on your domain and admin access is handed over.'},
-           {'t': 'Mosques: 3 interest-free payments', 's': 'The first before work starts, the last before handover.'}]}
+           {'t': '1/3 paid upfront',
+            's': 'Paid before work starts. The rest is paid before the site goes live on your domain and '
+                 'admin access is handed over.'},
+           {'t': 'Mosques: 3 interest-free payments',
+            's': 'The first before work starts, the last before handover.'}]}
 
 EN_DATA = {'audiences': [{'title': 'Dental clinics',
                 'lead': 'Within seconds, a patient sees what you do, who you are and how to call you.',
@@ -384,10 +407,15 @@ EN_DATA = {'audiences': [{'title': 'Dental clinics',
                'text': '1 promo video of 30–60 seconds + 2 reels of 15–20 seconds. Up to 3 hours of filming '
                        'at one location; reels cut from the same footage.',
                'badge': ''},
+              {'name': 'Monthly starter',
+               'price': '500',
+               'text': '4 reels of 15–30 seconds, one a week. One visit a month, up to 2 hours of filming at '
+                       'one location. For smaller cafés, salons and shops.',
+               'badge': ''},
               {'name': 'Monthly content',
                'price': '800',
                'text': '6 reels of 15–30 seconds and a simple posting plan. One visit a month, up to 4 hours '
-                       'of filming at one location.',
+                       'of filming at one location. For restaurants and larger businesses.',
                'badge': ''}],
  'steps': [{'title': 'PLANNING', 'text': 'Goal, idea and shot list'},
            {'title': 'FILMING', 'text': 'One agreed session'},
