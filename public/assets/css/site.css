@@ -278,3 +278,33 @@ ul,ol{padding:0;list-style:none}
 .box.gear{display:flex;align-items:center;gap:22px;padding:18px}
 .box.gear img{flex:none;width:150px;aspect-ratio:1/1;object-fit:cover;border-radius:16px}
 @media (max-width:420px){.box.gear{flex-direction:column;align-items:flex-start}.box.gear img{width:100%;aspect-ratio:4/3}}
+
+/* džemat cost comparison */
+.cost-grid{align-items:stretch}
+.cost-card{display:flex;flex-direction:column}
+.cost-card h3{font-size:18px;font-weight:600}
+.cost-card .amount{font-size:clamp(30px,3vw,38px)}
+.cost-unit{margin-top:4px;font-size:15px}
+.price-dark .cost-unit{color:var(--muted)}
+.cost-points{margin-top:20px;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.5}
+.cost-points li{padding-left:20px;position:relative}
+.cost-points li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--paper-line)}
+.card-light .cost-points li{color:var(--ink-muted)}
+.price-dark .cost-points li::before{background:var(--orange)}
+.payback{margin-top:28px;padding:36px}
+.pb-legend{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:20px;font-size:14px;color:var(--ink-muted)}
+.pb-legend span{display:flex;align-items:center;gap:8px}
+.pb-legend i{width:14px;height:14px;border-radius:4px;display:inline-block}
+i.pb-a{background:#B9B6C9}i.pb-b{background:var(--orange)}
+.pb-rows{margin-top:24px;display:flex;flex-direction:column;gap:18px}
+.pb-row{display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:center}
+.pb-year{font-size:14px;font-weight:600}
+.pb-bars{display:flex;flex-direction:column;gap:6px}
+.pb-bar{height:26px;border-radius:6px;display:flex;align-items:center;min-width:fit-content;padding:0 10px;font-size:13px;font-weight:600;white-space:nowrap}
+.pb-bar.pb-a{background:#E4E2EC;color:var(--ink)}
+.pb-bar.pb-b{background:var(--orange);color:var(--navy)}
+.pb-note{margin-top:24px;font-size:16px;line-height:1.6;font-weight:500}
+@media (max-width:560px){.pb-row{grid-template-columns:1fr;gap:6px}.payback{padding:24px}}
+.why{margin-top:72px;max-width:760px}
+.why-p{margin-top:16px;font-size:17px;line-height:1.7;color:var(--ink-muted)}
+.cost-src{margin-top:40px;font-size:12px;color:var(--ink-muted);opacity:.8;max-width:760px;line-height:1.5}

@@ -90,6 +90,48 @@
   </div>
 </section>
 
+<!-- COST -->
+<section id="troskovi" class="wrap section" style="padding-top:88px">
+  <p class="eyebrow" style="margin-bottom:16px">{{ t.costEyebrow }}</p>
+  <h2 class="h-lg" style="max-width:820px">{{ t.costTitle }}</h2>
+  <p class="sub" style="margin-top:18px;max-width:620px;font-size:17px">{{ t.costLead }}</p>
+  <div class="grid-3 cost-grid" style="margin-top:40px">
+    {% for o in t.costOptions %}
+    <div class="{% if o.hot %}price price-dark{% else %}card-light price{% endif %} cost-card">
+      <h3>{{ o.name }}</h3>
+      <p class="amount">{{ o.price }}</p>
+      <p class="{% if not o.hot %}muted{% endif %} cost-unit">{{ o.unit }}</p>
+      <ul class="cost-points">{% for x in o.points %}<li>{{ x }}</li>{% endfor %}</ul>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="payback card-light">
+    <h3 class="h-sm">{{ t.paybackTitle }}</h3>
+    <p class="muted" style="margin-top:8px">{{ t.paybackLead }}</p>
+    <div class="pb-legend"><span><i class="pb-a"></i>{{ t.paybackA }}</span><span><i class="pb-b"></i>{{ t.paybackB }}</span></div>
+    <div class="pb-rows">
+      {% for r in t.paybackRows %}
+      <div class="pb-row">
+        <span class="pb-year">{{ r.year }}</span>
+        <div class="pb-bars">
+          <div class="pb-bar pb-a" style="width:{{ (r.a / 6000 * 100)|round(1) }}%"><span>{{ "{:,}".format(r.a).replace(",", ".") if t.lang == 'bs' else "{:,}".format(r.a) }} €</span></div>
+          <div class="pb-bar pb-b" style="width:{{ (r.b / 6000 * 100)|round(1) }}%"><span>{{ "{:,}".format(r.b).replace(",", ".") if t.lang == 'bs' else "{:,}".format(r.b) }} €</span></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="pb-note">{{ t.paybackNote }}</p>
+  </div>
+
+  <div class="why">
+    <p class="eyebrow" style="margin-bottom:14px">{{ t.whyEyebrow }}</p>
+    <h3 class="h-md">{{ t.whyTitle }}</h3>
+    {% for p in t.whyText %}<p class="why-p">{{ p }}</p>{% endfor %}
+  </div>
+  <p class="cost-src">{{ t.costSources }}</p>
+</section>
+
 <!-- FEATURES -->
 <section id="funkcije" class="wrap section" style="padding-top:88px">
   <p class="eyebrow" style="margin-bottom:16px">{{ t.featEyebrow }}</p>
