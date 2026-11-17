@@ -147,6 +147,7 @@
         <p class="tag">{{ b.tag }}</p>
         <h3>{{ b.t }}</h3>
         <p class="muted">{{ b.s }}</p>
+        {% if b.link %}<a class="link-arrow" href="{{ b.link }}" target="_blank" rel="noopener">{{ t.liveLabel }} {{ arrow_sm|safe }}</a>{% endif %}
       </div>
       <div class="feature-shot">
         <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>admin</span></div>
@@ -158,7 +159,7 @@
 
   <h3 class="h-sm" style="margin-top:96px;margin-bottom:28px">{{ t.moreTitle }}</h3>
   <ul class="more-grid">
-    {% for m in t.more %}<li><strong>{{ m.t }}</strong><span class="muted">{{ m.s }}</span></li>{% endfor %}
+    {% for m in t.more %}<li><strong>{{ m.t }}</strong><span class="muted">{{ m.s }}</span>{% if m.link %}<a class="more-link" href="{{ m.link }}" target="_blank" rel="noopener">{{ t.liveShort }} {{ arrow_sm|safe }}</a>{% endif %}</li>{% endfor %}
   </ul>
 </section>
 
