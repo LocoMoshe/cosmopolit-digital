@@ -19,7 +19,7 @@ SETTINGS = dict(
     site_url="https://cosmopolit.digital",  # TODO: change once the domain is bought
     phone="062 897 216",
     phone_intl="38762897216",
-    email=None,  # e.g. "info@cosmopolit.digital" once the domain exists
+    email="cosmopolit.digital@gmail.com",  # switch to info@<domain> once the domain exists
     year=datetime.date.today().year,
 )
 
