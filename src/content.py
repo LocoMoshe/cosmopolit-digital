@@ -70,8 +70,8 @@ BS = {'lang': 'bs',
  'regular': 'redovna cijena',
  'termsTitle': 'Kako radimo',
  'terms': [{'t': 'Gotovo za 1–2 sedmice', 's': 'Zavisno od složenosti stranice.'},
-           {'t': '1/3 cijene unaprijed', 's': 'Plaća se prije početka rada, ostatak po predaji stranice.'},
-           {'t': 'Džemati: 3 rate bez kamate', 's': 'Prva rata prije početka rada.'}]}
+           {'t': '1/3 cijene unaprijed', 's': 'Plaća se prije početka rada. Ostatak se plaća prije prebacivanja stranice na vašu domenu i predaje admin pristupa.'},
+           {'t': 'Džemati: 3 rate bez kamate', 's': 'Prva rata prije početka rada, zadnja prije predaje stranice.'}]}
 
 BS_DATA = {'audiences': [{'title': 'Stomatološke ordinacije',
                 'lead': 'Pacijent za par sekundi vidi šta radite, ko ste i kako da vas pozove.',
@@ -272,8 +272,8 @@ EN = {'lang': 'en',
  'regular': 'standard price',
  'termsTitle': 'How it works',
  'terms': [{'t': 'Ready in 1–2 weeks', 's': 'Depending on how complex the site is.'},
-           {'t': '1/3 paid upfront', 's': 'Paid before work starts, the rest on handover.'},
-           {'t': 'Mosques: 3 interest-free payments', 's': 'The first one before work starts.'}]}
+           {'t': '1/3 paid upfront', 's': 'Paid before work starts. The rest is paid before the site goes live on your domain and admin access is handed over.'},
+           {'t': 'Mosques: 3 interest-free payments', 's': 'The first before work starts, the last before handover.'}]}
 
 EN_DATA = {'audiences': [{'title': 'Dental clinics',
                 'lead': 'Within seconds, a patient sees what you do, who you are and how to call you.',
