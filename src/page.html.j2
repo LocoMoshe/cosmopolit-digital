@@ -209,11 +209,15 @@
     </div>
     <div class="reels">
       {% for r in d.reels %}
-      <figure class="reel">
-        <video src="{{ root }}assets/video/{{ r.file }}.mp4" poster="{{ root }}assets/video/{{ r.file }}.jpg" controls playsinline preload="none" width="720" height="1280"></video>
-        <figcaption><span>{{ r.tag }}</span>{{ r.title }}</figcaption>
-      </figure>
+      <button type="button" class="reel" data-src="{{ root }}assets/video/{{ r.file }}.mp4" aria-label="{{ r.title }}">
+        <span class="reel-thumb"><img src="{{ root }}assets/video/{{ r.file }}.jpg" alt="" width="480" height="854" loading="lazy"><i aria-hidden="true"></i></span>
+        <span class="reel-cap"><b>{{ r.tag }}</b>{{ r.title }}</span>
+      </button>
       {% endfor %}
+    </div>
+    <div class="reel-modal" id="reel-modal" hidden>
+      <button type="button" class="reel-close" aria-label="{{ 'Zatvori' if t.lang == 'bs' else 'Close' }}">×</button>
+      <video controls playsinline></video>
     </div>
 
     <div class="block-head">
@@ -323,7 +327,11 @@
 })();
 </script>
 <script>
-document.querySelectorAll('.reel video').forEach(function(v){v.addEventListener('play',function(){document.querySelectorAll('.reel video').forEach(function(o){if(o!==v)o.pause()})})});
+(function(){var m=document.getElementById('reel-modal');if(!m)return;var v=m.querySelector('video');
+function close(){v.pause();v.removeAttribute('src');v.load();m.hidden=true;document.body.style.overflow=''}
+document.querySelectorAll('.reel').forEach(function(b){b.addEventListener('click',function(){v.src=b.dataset.src;m.hidden=false;document.body.style.overflow='hidden';v.play().catch(function(){})})});
+m.addEventListener('click',function(e){if(e.target===m||e.target.classList.contains('reel-close'))close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden)close()});})();
 </script>
 </body>
 </html>
