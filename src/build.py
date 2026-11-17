@@ -16,7 +16,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
 
 SETTINGS = dict(
-    site_url="https://cosmopolit.digital",  # TODO: change once the domain is bought
+    site_url="https://cosmopolitdigital.com",
     phone="062 897 216",
     phone_intl="38762897216",
     email="cosmopolit.digital@gmail.com",  # switch to info@<domain> once the domain exists

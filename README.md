@@ -29,7 +29,7 @@ Phone, email and the site's domain are set at the top of `src/build.py`.
 
 - Website prices: `[CIJENA]` / `[PRICE]` in `src/content.py`
 - Email: `email=None` in `src/build.py` (the button appears once it's set)
-- Domain: `site_url` in `src/build.py` (used for share previews and search engines)
+- Domain: cosmopolitdigital.com (set as `site_url` in `src/build.py`)
 
 ## Deploy (Cloudflare Pages)
 
