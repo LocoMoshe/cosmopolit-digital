@@ -246,7 +246,7 @@ BS_DATA = {'audiences': [{'title': 'Biznisi',
                 'img': 'dzemat'}],
  'reels': [{'file': 'automatic', 'title': 'Lifestyle reel', 'tag': 'REEL'},
            {'file': 'bazerdzan', 'title': 'Bazerdžan, prostor radnje', 'tag': 'PROMO'},
-           {'file': 'reel-3', 'title': 'Snimak događaja', 'tag': 'EVENT'},
+           {'file': 'reel-3', 'title': 'Garden of Dreams, SFF closing event (ArtBat)', 'tag': 'EVENT'},
            {'file': 'renki', 'title': 'Ulica Titova iz zraka', 'tag': 'DRON'},
            {'file': 'fasada', 'title': 'Nova fasada', 'tag': 'DRON'}]}
 
@@ -494,7 +494,7 @@ EN_DATA = {'audiences': [{'title': 'Businesses',
                 'img': 'dzemat'}],
  'reels': [{'file': 'automatic', 'title': 'Lifestyle reel', 'tag': 'REEL'},
            {'file': 'bazerdzan', 'title': 'Bazerdžan, the shop', 'tag': 'PROMO'},
-           {'file': 'reel-3', 'title': 'Event coverage', 'tag': 'EVENT'},
+           {'file': 'reel-3', 'title': 'Garden of Dreams, SFF closing event (ArtBat)', 'tag': 'EVENT'},
            {'file': 'renki', 'title': 'Titova Street from above', 'tag': 'DRONE'},
            {'file': 'fasada', 'title': 'New facade', 'tag': 'DRONE'}]}
 
