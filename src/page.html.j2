@@ -143,24 +143,25 @@
     <h2 class="h-md" id="web-cijene">{{ t.webPriceTitle }}</h2>
     <p class="muted">{{ t.webPriceLead }}</p>
   </div>
-  <div class="grid-3">
-    <div class="card-light price">
-      <h3>{{ t.pOnce }}</h3>
-      <p class="amount"><small class="muted">{{ t.from }} </small>{{ t.phPrice }} <span class="cur">KM</span></p>
-      <p class="muted">{{ t.pOnceSub }}</p>
+  <div class="grid-2 web-prices">
+    {% for k in d.webPackages %}
+    <div class="{% if k.hot %}price price-dark{% else %}card-light price{% endif %}">
+      {% if k.badge %}<span class="badge">{{ k.badge }}</span>{% endif %}
+      <h3>{{ k.name }}</h3>
+      <p class="amount"><small class="{% if not k.hot %}muted{% endif %}">{{ t.from }} </small>{{ k.main }} <small class="alt">/ {{ k.alt }}</small></p>
+      {% if k.regular %}<p class="regular">{{ t.regular }} {{ t.from }} {{ k.regular }}</p>{% endif %}
+      <p class="{% if not k.hot %}muted{% endif %} desc">{{ k.text }}</p>
     </div>
-    <div class="price price-dark">
-      <span class="badge">{{ t.popular }}</span>
-      <h3>{{ t.pMonthly }}</h3>
-      <p class="amount">{{ t.phPrice }} <span class="cur">KM</span> <small>{{ t.perMonth }}</small></p>
-      <p>{{ t.pMonthlySub }}</p>
-    </div>
-    <div class="card-light price">
-      <h3>{{ t.pCare }}</h3>
-      <p class="amount">{{ t.phPrice }} <span class="cur">KM</span> <small class="muted">{{ t.perMonth }}</small></p>
-      <p class="muted">{{ t.pCareSub }}</p>
-    </div>
+    {% endfor %}
   </div>
+  <div class="care card-light">
+    <div><h3>{{ t.careTitle }}</h3><p class="muted">{{ t.careText }}</p></div>
+    <p class="amount">{{ d.care.main }} <small class="muted">{{ t.perMonth }} · {{ d.care.alt }}</small></p>
+  </div>
+  <h3 class="terms-title">{{ t.termsTitle }}</h3>
+  <ul class="terms">
+    {% for x in t.terms %}<li><strong>{{ x.t }}</strong><span class="muted">{{ x.s }}</span></li>{% endfor %}
+  </ul>
 </section>
 </div>
 

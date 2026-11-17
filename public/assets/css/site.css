@@ -212,3 +212,21 @@ ul,ol{padding:0;list-style:none}
 .site-footer{border-top:1px solid var(--line-soft)}
 .site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:28px;padding-bottom:28px;font-size:13px;letter-spacing:.2em;color:var(--muted)}
 .site-footer a{color:var(--muted)}
+
+/* web pricing */
+.web-prices{gap:20px}
+.web-prices .price{display:flex;flex-direction:column}
+.price .amount .alt{font-size:18px;font-weight:500;color:var(--ink-muted)}
+.price-dark .amount .alt{color:var(--muted)}
+.price .regular{margin-top:4px;font-size:14px;color:var(--muted)}
+.price .desc{margin-top:12px;font-size:15px;line-height:1.6}
+.care{margin-top:20px;padding:28px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px}
+.care h3{font-size:18px;font-weight:500}
+.care p{font-size:15px;margin-top:4px}
+.care .amount{font-size:32px;font-weight:700;letter-spacing:-.02em;margin:0}
+.care .amount small{font-size:15px;font-weight:400}
+.terms-title{margin-top:56px;font-size:14px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--orange-text)}
+.terms{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px}
+.terms li{border-top:2px solid var(--ink);padding-top:16px;display:flex;flex-direction:column;gap:6px}
+.terms strong{font-size:19px}
+.terms span{font-size:15px;line-height:1.55}
