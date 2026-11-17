@@ -14,6 +14,7 @@ public/            ← the live site (this is what gets deployed)
 src/
   content.py       ← homepage text, both languages
   content_dzemati.py ← text for the džemat page (/dzemati/)
+  content_ordinacije.py ← text for the dental clinic page (/ordinacije/)
   page.html.j2     ← the page layout (shared by both languages)
   build.py         ← generates public/index.html and public/en/index.html
 ```

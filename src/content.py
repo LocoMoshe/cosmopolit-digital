@@ -9,40 +9,40 @@ BS = {'lang': 'bs',
  'navWork': 'Radovi',
  'aboutEyebrow': 'O NAMA',
  'aboutTitle': 'Zašto Cosmopolit?',
- 'aboutParas': ['Rođen sam u Africi. Poslije sam živio i radio u Aziji, na Bliskom istoku i u Evropi, pa se '
-                'taj naziv nekako sam nametnuo.',
-                'Kroz sve to sam shvatio da ljudi rijetko tačno znaju šta im treba. Znaju da im nešto fali '
-                'ili da nešto ne radi kako treba, ali to teško opišu. Zato na početku više pitam nego što '
-                'pričam.',
-                'Zanima me puno toga, od historije i nauke do tipografije i toga kako se ljudi snalaze kad '
-                'otvore neku stranicu. Sve mi to pomaže da napravim nešto što je lako koristiti, a da pritom '
-                'lijepo izgleda.'],
+ 'aboutParas': ['Rođen sam u Africi. Poslije sam živio i radio u Aziji, na Bliskom istoku i u '
+                'Evropi, pa se taj naziv nekako sam nametnuo.',
+                'Kroz sve to sam shvatio da ljudi rijetko tačno znaju šta im treba. Znaju da im '
+                'nešto fali ili da nešto ne radi kako treba, ali to teško opišu. Zato na početku '
+                'više pitam nego što pričam.',
+                'Zanima me puno toga, od historije i nauke do tipografije i toga kako se ljudi '
+                'snalaze kad otvore neku stranicu. Sve mi to pomaže da napravim nešto što je lako '
+                'koristiti, a da pritom lijepo izgleda.'],
  'aboutSign': 'Haris Hadrović',
  'aboutRole': 'osnivač, Cosmopolit Digital',
  'aboutAlt': 'Haris Hadrović, osnivač Cosmopolit Digitala',
- 'navDzemati': 'Za džemate',
- 'dzLink': 'Sve o stranici za džemate',
  'navContact': 'Kontakt',
  'cta': 'Zatražite ponudu',
  'heroEyebrow': 'WEB STRANICE I VIDEO',
  'heroTitle': 'Vaš biznis, predstavljen kako treba.',
- 'heroLead': 'Web stranice koje sami možete mijenjati i kratke video priče koje predstavljaju vaš posao.',
+ 'heroLead': 'Web stranice koje sami možete mijenjati i kratke video priče koje predstavljaju vaš '
+             'posao.',
  'heroSub': 'Iz Sarajeva, za klijente u Bosni i Hercegovini i širom Evrope.',
  'doorWeb': 'Web stranice',
- 'doorWebSub': 'Za ordinacije, džemate i lokalne biznise',
+ 'doorWebSub': 'Za biznise, organizacije i udruženja',
  'doorVideo': 'Video priče',
  'doorVideoSub': 'Reels, kratke reklame i mjesečni sadržaj',
  'altHeroDesktop': 'Stranica ordinacije Dr. Ganibegović na računaru',
  'altHeroMobile': 'GentleBond na mobitelu',
  'webEyebrow': 'WEB STRANICE',
  'webTitle': 'Stranice koje rade za vas, ne obrnuto.',
- 'webLead': 'Jasne, brze i dvojezične stranice koje izgledaju dobro na mobitelu. Nakon predaje ih sami '
-            'uređujete, bez čekanja na programera.',
+ 'webLead': 'Jasne, brze i dvojezične stranice koje izgledaju dobro na mobitelu. Nakon predaje ih '
+            'sami uređujete, bez čekanja na programera.',
  'workTitle': 'Radovi',
- 'workLead': 'Prave stranice za prave klijente. Svaka radi jednako dobro na mobitelu kao i na računaru.',
+ 'workLead': 'Prave stranice za prave klijente. Svaka radi jednako dobro na mobitelu kao i na '
+             'računaru.',
  'webPriceTitle': 'Cijene web stranica',
- 'webPriceLead': 'Jasne početne cijene. Konačan iznos dogovaramo nakon kratkog razgovora o tome šta vam '
-                 'treba.',
+ 'webPriceLead': 'Jasne početne cijene. Konačan iznos dogovaramo nakon kratkog razgovora o tome '
+                 'šta vam treba.',
  'videoEyebrow': 'VIDEO PRIČE',
  'videoTitle': 'Video za vaš biznis.',
  'videoLead': 'Kratke video priče koje predstavljaju vaš posao.',
@@ -55,13 +55,13 @@ BS = {'lang': 'bs',
  'extra1': 'Novi reel iz istog materijala',
  'extra2': 'Dodatna montaža i korekcije',
  'perHour': '/sat',
- 'extraNote': 'Korekcije obuhvataju izmjene postojeće montaže; novi koncept i ponovno snimanje ugovaraju se '
-              'zasebno.',
+ 'extraNote': 'Korekcije obuhvataju izmjene postojeće montaže; novi koncept i ponovno snimanje '
+              'ugovaraju se zasebno.',
  'animEyebrow': 'ANIMACIJE · DODATNA OPCIJA',
  'procEyebrow': 'OD IDEJE DO OBJAVE',
  'procTitle': 'Kako radimo.',
- 'procNote': '*Od snimanja i prijema svih materijala; finalna isporuka do 2 radna dana nakon povratnih '
-             'informacija.',
+ 'procNote': '*Od snimanja i prijema svih materijala; finalna isporuka do 2 radna dana nakon '
+             'povratnih informacija.',
  'gearEyebrow': 'OPREMA',
  'gearTitle': 'Čime snimamo.',
  'gearCamLabel': 'KAMERA',
@@ -75,62 +75,71 @@ BS = {'lang': 'bs',
  'path': '/',
  'skip': 'Preskoči na sadržaj',
  'menu': 'Meni',
- 'description': 'Cosmopolit Digital: web stranice za ordinacije, džemate i lokalne biznise, i kratki video '
-                'za vaš biznis (reels, reklame, mjesečni sadržaj). Sarajevo.',
- 'animNote': 'Do 10 sekundi animiranih elemenata po videu, u bojama i fontovima vašeg brenda. Složenije '
-             'animacije po posebnoj ponudi.',
+ 'description': 'Cosmopolit Digital: web stranice koje sami uređujete i kratki video za vaš biznis '
+                '(reels, reklame, mjesečni sadržaj). Sarajevo, za klijente u BiH i Evropi.',
+ 'animNote': 'Do 10 sekundi animiranih elemenata po videu, u bojama i fontovima vašeg brenda. '
+             'Složenije animacije po posebnoj ponudi.',
  'careTitle': 'Ključ u ruke, bez mjesečnih troškova',
  'careUnit': '/ sat za kasnije izmjene',
- 'careText': '12 mjeseci garancije: sve greške popravljamo besplatno. Kasnije izmjene i dorade samo kad ih zatražite.',
+ 'careText': '12 mjeseci garancije: sve greške popravljamo besplatno. Kasnije izmjene i dorade '
+             'samo kad ih zatražite.',
  'perMonth': '/ mjesečno',
  'regular': 'redovna cijena',
  'termsTitle': 'Kako radimo',
  'terms': [{'t': 'Gotovo za 1–2 sedmice', 's': 'Zavisno od složenosti stranice.'},
            {'t': '1/3 cijene unaprijed',
-            's': 'Plaća se prije početka rada. Ostatak se plaća prije prebacivanja stranice na vašu domenu i '
-                 'predaje admin pristupa.'},
-           {'t': 'Džemati: 3 rate bez kamate',
-            's': 'Prva rata prije početka rada, zadnja prije predaje stranice.'}]}
+            's': 'Plaća se prije početka rada. Ostatak se plaća prije prebacivanja stranice na '
+                 'vašu domenu i predaje admin pristupa.'}],
+ 'navOrd': 'Ordinacije',
+ 'navDz': 'Džemati',
+ 'solEyebrow': 'POSEBNA RJEŠENJA',
+ 'solTitle': 'Za ordinacije i džemate.',
+ 'solLead': 'Za ove dvije oblasti imam gotova rješenja, primjere i posebne cijene.'}
 
-BS_DATA = {'audiences': [{'title': 'Stomatološke ordinacije',
-                'lead': 'Pacijent za par sekundi vidi šta radite, ko ste i kako da vas pozove.',
-                'points': ['Usluge objašnjene jednostavno, uz interaktivne vodiče',
-                           'Poziv ili zakazivanje jednim dodirom',
-                           'Tim, Google recenzije i radno vrijeme na jednom mjestu',
-                           'Video predstavljanje ordinacije, po želji']},
-               {'title': 'Džemati i islamske zajednice',
-                'lead': 'Stranica koju odbor sam vodi, bez skupe mjesečne pretplate.',
-                'points': ['Vaktija, obavještenja i galerija',
+BS_DATA = {'audiences': [{'title': 'Biznisi',
+                'lead': 'Klijent za par sekundi vidi šta radite, gdje ste i kako da vas '
+                        'kontaktira.',
+                'points': ['Usluge ili ponuda objašnjene jednostavno',
+                           'Poziv ili poruka jednim dodirom',
+                           'Radno vrijeme, mapa i Google recenzije na jednom mjestu',
+                           'Video predstavljanje, po želji']},
+               {'title': 'Organizacije i udruženja',
+                'lead': 'Stranica koju sami vodite, bez skupe mjesečne pretplate.',
+                'points': ['Obavještenja, događaji i galerija',
                            'Online učlanjenje, članarina i donacije',
-                           'Jednostavan admin u kojem odbor objavljuje sadržaj',
-                           'Na bosanskom i jeziku zemlje u kojoj živite']}],
+                           'Jednostavan admin u kojem sami objavljujete',
+                           'Na jednom ili više jezika']}],
  'featured': [{'tag': 'DŽEMAT · DORNBIRN, AUSTRIJA',
                'name': 'Džemat Izet Nanić',
-               'text': 'Nova stranica džemata s vaktijom, obavještenjima i online učlanjenjem. Odbor sam '
-                       'objavljuje sadržaj kroz jednostavan admin, a stranica je prešla s Wixa na brz '
-                       'hosting bez mjesečne pretplate.',
+               'text': 'Nova stranica džemata s vaktijom, obavještenjima i online učlanjenjem. '
+                       'Odbor sam objavljuje sadržaj kroz jednostavan admin, a stranica je prešla '
+                       's Wixa na brz hosting bez mjesečne pretplate.',
                'points': ['Vaktija', 'Online učlanjenje', 'Admin za odbor', 'Newsletter'],
                'url': 'https://dzematizetnanic.com',
                'linkLabel': 'Posjetite stranicu',
                'domain': 'dzematizetnanic.com',
                'altDesktop': 'Stranica Džemata Izet Nanić na računaru',
                'altMobile': 'Stranica Džemata Izet Nanić na mobitelu',
-               'img': 'dzemat'},
+               'img': 'dzemat',
+               'more': '/dzemati/',
+               'moreLabel': 'Stranice za džemate'},
               {'tag': 'STOMATOLOŠKA ORDINACIJA · SARAJEVO',
                'name': 'Dr. Ganibegović',
-               'text': 'Nova stranica ortodontske i stomatološke ordinacije: usluge jasno objašnjene, '
-                       'odjeljak za djecu, Google recenzije i poziv jednim dodirom.',
+               'text': 'Nova stranica ortodontske i stomatološke ordinacije: usluge jasno '
+                       'objašnjene, odjeljak za djecu, Google recenzije i poziv jednim dodirom.',
                'points': ['Ortodoncija', 'Za djecu', 'Google recenzije', 'Poziv jednim dodirom'],
                'url': 'https://stomatolog-ganibegovic.loco-moshe.workers.dev',
                'linkLabel': 'Pogledajte stranicu',
                'domain': 'stomatolog.ba',
                'altDesktop': 'Stranica ordinacije Dr. Ganibegović na računaru',
                'altMobile': 'Stranica ordinacije Dr. Ganibegović na mobitelu',
-               'img': 'stomatolog'}],
+               'img': 'stomatolog',
+               'more': '/ordinacije/',
+               'moreLabel': 'Stranice za ordinacije'}],
  'more': [{'tag': 'WEB APLIKACIJA',
            'name': 'GentleBond',
-           'text': 'Aplikacija koja pomaže porodicama da starijim članovima pronađu prijatelje u blizini, za '
-                   'kafu, šetnju i razgovor.',
+           'text': 'Aplikacija koja pomaže porodicama da starijim članovima pronađu prijatelje u '
+                   'blizini, za kafu, šetnju i razgovor.',
            'url': 'https://kindred-connect-elders.vercel.app',
            'linkLabel': 'Pogledajte aplikaciju',
            'domain': 'gentlebond',
@@ -160,38 +169,39 @@ BS_DATA = {'audiences': [{'title': 'Stomatološke ordinacije',
           {'name': 'Mjesečni paket animacija', 'price': '100', 'unit': 'mjesečno'}],
  'packages': [{'name': 'Montaža vaših snimaka',
                'price': '100',
-               'text': '1 reel do 30 sekundi; do 10 minuta dostavljenog materijala. Vi šaljete snimke i '
-                       'smjernice; uključena je jednostavna montaža.',
+               'text': '1 reel do 30 sekundi; do 10 minuta dostavljenog materijala. Vi šaljete '
+                       'snimke i smjernice; uključena je jednostavna montaža.',
                'badge': ''},
               {'name': 'Jedan reel',
                'price': '200',
-               'text': '1 vertikalni video od 15–30 sekundi. Do 1 sat snimanja na jednoj lokaciji u '
-                       'Sarajevu.',
+               'text': '1 vertikalni video od 15–30 sekundi. Do 1 sat snimanja na jednoj lokaciji '
+                       'u Sarajevu.',
                'badge': ''},
               {'name': 'Tri reelsa',
                'price': '450',
-               'text': '3 vertikalna videa od 15–30 sekundi po videu. Jedan dolazak, do 2 sata snimanja na '
-                       'jednoj lokaciji.',
+               'text': '3 vertikalna videa od 15–30 sekundi po videu. Jedan dolazak, do 2 sata '
+                       'snimanja na jednoj lokaciji.',
                'badge': 'PREPORUKA ZA POČETAK'},
               {'name': 'Kratka reklama',
                'price': '450',
-               'text': '1 promotivni video od 30–60 sekundi s pozivom na akciju. Kratak koncept, do 2 sata '
-                       'snimanja; jedan odabrani format.',
+               'text': '1 promotivni video od 30–60 sekundi s pozivom na akciju. Kratak koncept, '
+                       'do 2 sata snimanja; jedan odabrani format.',
                'badge': ''},
               {'name': 'Restoran u fokusu',
                'price': '650',
-               'text': '1 promo video od 30–60 sekundi + 2 reelsa od 15–20 sekundi. Do 3 sata snimanja na '
-                       'jednoj lokaciji; reelsi su izvedeni iz istog materijala.',
+               'text': '1 promo video od 30–60 sekundi + 2 reelsa od 15–20 sekundi. Do 3 sata '
+                       'snimanja na jednoj lokaciji; reelsi su izvedeni iz istog materijala.',
                'badge': ''},
               {'name': 'Mjesečni start',
                'price': '500',
-               'text': '4 reelsa od 15–30 sekundi, jedan svake sedmice. Jedan dolazak mjesečno, do 2 sata '
-                       'snimanja na jednoj lokaciji. Za manje kafiće, salone i radnje.',
+               'text': '4 reelsa od 15–30 sekundi, jedan svake sedmice. Jedan dolazak mjesečno, do '
+                       '2 sata snimanja na jednoj lokaciji. Za manje kafiće, salone i radnje.',
                'badge': ''},
               {'name': 'Mjesečni sadržaj',
                'price': '800',
-               'text': '6 reelsa od 15–30 sekundi i jednostavan prijedlog rasporeda objava. Jedan dolazak '
-                       'mjesečno, do 4 sata snimanja na jednoj lokaciji. Za restorane i veće biznise.',
+               'text': '6 reelsa od 15–30 sekundi i jednostavan prijedlog rasporeda objava. Jedan '
+                       'dolazak mjesečno, do 4 sata snimanja na jednoj lokaciji. Za restorane i '
+                       'veće biznise.',
                'badge': ''}],
  'steps': [{'title': 'DOGOVOR', 'text': 'Cilj, ideja i plan kadrova'},
            {'title': 'SNIMANJE', 'text': 'Jedan dogovoreni termin'},
@@ -205,7 +215,8 @@ BS_DATA = {'audiences': [{'title': 'Stomatološke ordinacije',
                   'badge': '',
                   'regular': ''},
                  {'name': 'Proširena web stranica',
-                  'text': 'Više podstranica i interaktivni sadržaj, kao stranica ordinacije Dr. Ganibegović.',
+                  'text': 'Više podstranica i interaktivni sadržaj, kao stranica ordinacije Dr. '
+                          'Ganibegović.',
                   'main': '2.000 KM',
                   'alt': '1.000 €',
                   'hot': False,
@@ -218,16 +229,19 @@ BS_DATA = {'audiences': [{'title': 'Stomatološke ordinacije',
                   'alt': '3.000 €',
                   'hot': False,
                   'badge': '',
-                  'regular': ''},
-                 {'name': 'Za džemate',
-                  'text': 'Kompletan admin sistem kao na stranici Džemata Izet Nanić, po posebnoj cijeni za '
-                          'zajednice.',
-                  'main': '3.500 KM',
-                  'alt': '1.800 €',
-                  'hot': True,
-                  'badge': 'POSEBNA CIJENA',
-                  'regular': '6.000 KM / 3.000 €'}],
- 'care': {'main': '40 KM', 'alt': '20 €'}}
+                  'regular': ''}],
+ 'care': {'main': '40 KM', 'alt': '20 €'},
+ 'solutions': [{'href': '/ordinacije/',
+                'title': 'Stomatološke ordinacije',
+                'text': 'Web stranica i video za Instagram, za ordinacije u Sarajevu i BiH.',
+                'link': 'Pogledajte ponudu za ordinacije',
+                'img': 'stomatolog'},
+               {'href': '/dzemati/',
+                'title': 'Džemati i islamske zajednice',
+                'text': 'Stranica s adminom koju odbor vodi sam, bez godišnje pretplate. Posebna '
+                        'cijena za džemate.',
+                'link': 'Pogledajte ponudu za džemate',
+                'img': 'dzemat'}]}
 
 EN = {'lang': 'en',
  'title': 'Websites and video for businesses, Sarajevo | Cosmopolit Digital',
@@ -237,19 +251,17 @@ EN = {'lang': 'en',
  'navWork': 'Work',
  'aboutEyebrow': 'ABOUT',
  'aboutTitle': 'Why Cosmopolit?',
- 'aboutParas': ['I was born in Africa. Later I lived and worked in Asia, the Middle East and Europe, so the '
-                'name more or less chose itself.',
-                'Along the way I noticed that people rarely know exactly what they need. They know something '
-                'is missing or not working, but it is hard to put into words. So at the start I ask more '
-                'than I talk.',
-                'I am interested in a lot of things, from history and science to typography and how people '
-                'find their way around a web page. All of it helps me make something that is easy to use and '
-                'looks good too.'],
+ 'aboutParas': ['I was born in Africa. Later I lived and worked in Asia, the Middle East and '
+                'Europe, so the name more or less chose itself.',
+                'Along the way I noticed that people rarely know exactly what they need. They know '
+                'something is missing or not working, but it is hard to put into words. So at the '
+                'start I ask more than I talk.',
+                'I am interested in a lot of things, from history and science to typography and '
+                'how people find their way around a web page. All of it helps me make something '
+                'that is easy to use and looks good too.'],
  'aboutSign': 'Haris Hadrović',
  'aboutRole': 'founder, Cosmopolit Digital',
  'aboutAlt': 'Haris Hadrović, founder of Cosmopolit Digital',
- 'navDzemati': 'For mosques',
- 'dzLink': 'All about websites for mosques',
  'navContact': 'Contact',
  'cta': 'Get a quote',
  'heroEyebrow': 'WEBSITES AND VIDEO',
@@ -257,19 +269,20 @@ EN = {'lang': 'en',
  'heroLead': 'Websites you can update yourself, and short video stories that show what you do.',
  'heroSub': 'Based in Sarajevo, working with clients in Bosnia and Herzegovina and across Europe.',
  'doorWeb': 'Websites',
- 'doorWebSub': 'For dental clinics, mosques and local businesses',
+ 'doorWebSub': 'For businesses, organisations and associations',
  'doorVideo': 'Video stories',
  'doorVideoSub': 'Reels, short ads and monthly content',
  'altHeroDesktop': 'Dr. Ganibegović clinic site on a computer',
  'altHeroMobile': 'GentleBond on a phone',
  'webEyebrow': 'WEBSITES',
  'webTitle': 'Websites that work for you, not the other way round.',
- 'webLead': 'Clear, fast, bilingual sites that look good on a phone. After handover you edit them yourself, '
-            'with no waiting on a developer.',
+ 'webLead': 'Clear, fast, bilingual sites that look good on a phone. After handover you edit them '
+            'yourself, with no waiting on a developer.',
  'workTitle': 'Work',
  'workLead': 'Real sites for real clients. Every one works as well on a phone as on a computer.',
  'webPriceTitle': 'Website pricing',
- 'webPriceLead': 'Clear starting prices. We agree the final amount after a short call about what you need.',
+ 'webPriceLead': 'Clear starting prices. We agree the final amount after a short call about what '
+                 'you need.',
  'videoEyebrow': 'VIDEO STORIES',
  'videoTitle': 'Video for your business.',
  'videoLead': 'Short video stories that show what you do.',
@@ -282,12 +295,13 @@ EN = {'lang': 'en',
  'extra1': 'A new reel from the same footage',
  'extra2': 'Extra editing and revisions',
  'perHour': '/hour',
- 'extraNote': 'Revisions cover changes to the existing edit; a new concept or reshoot is quoted separately.',
+ 'extraNote': 'Revisions cover changes to the existing edit; a new concept or reshoot is quoted '
+              'separately.',
  'animEyebrow': 'ANIMATION · OPTIONAL EXTRA',
  'procEyebrow': 'FROM IDEA TO POST',
  'procTitle': 'How it works.',
- 'procNote': '*From the shoot and receipt of all materials; final delivery within 2 working days of your '
-             'feedback.',
+ 'procNote': '*From the shoot and receipt of all materials; final delivery within 2 working days '
+             'of your feedback.',
  'gearEyebrow': 'EQUIPMENT',
  'gearTitle': 'What we shoot with.',
  'gearCamLabel': 'CAMERA',
@@ -301,62 +315,72 @@ EN = {'lang': 'en',
  'path': '/en/',
  'skip': 'Skip to content',
  'menu': 'Menu',
- 'description': 'Cosmopolit Digital: websites for dental clinics, mosques and local businesses, plus short '
-                'video for your business (reels, ads, monthly content). Sarajevo.',
- 'animNote': 'Up to 10 seconds of animated elements per video, in your brand colours and fonts. More complex '
-             'animation quoted separately.',
+ 'description': 'Cosmopolit Digital: websites you can update yourself and short video for your '
+                'business (reels, ads, monthly content). Sarajevo, for clients in Bosnia and '
+                'across Europe.',
+ 'animNote': 'Up to 10 seconds of animated elements per video, in your brand colours and fonts. '
+             'More complex animation quoted separately.',
  'careTitle': 'Turnkey, no monthly fees',
  'careUnit': '/ hour for later changes',
- 'careText': '12-month guarantee: we fix any bugs for free. Later changes and additions only when you ask for them.',
+ 'careText': '12-month guarantee: we fix any bugs for free. Later changes and additions only when '
+             'you ask for them.',
  'perMonth': '/ month',
  'regular': 'standard price',
  'termsTitle': 'How it works',
  'terms': [{'t': 'Ready in 1–2 weeks', 's': 'Depending on how complex the site is.'},
            {'t': '1/3 paid upfront',
-            's': 'Paid before work starts. The rest is paid before the site goes live on your domain and '
-                 'admin access is handed over.'},
-           {'t': 'Mosques: 3 interest-free payments',
-            's': 'The first before work starts, the last before handover.'}]}
+            's': 'Paid before work starts. The rest is paid before the site goes live on your '
+                 'domain and admin access is handed over.'}],
+ 'navOrd': 'Dental clinics',
+ 'navDz': 'Mosques',
+ 'solEyebrow': 'SPECIAL SOLUTIONS',
+ 'solTitle': 'For clinics and mosques.',
+ 'solLead': 'For these two areas I have ready-made solutions, examples and special prices.'}
 
-EN_DATA = {'audiences': [{'title': 'Dental clinics',
-                'lead': 'Within seconds, a patient sees what you do, who you are and how to call you.',
-                'points': ['Treatments explained simply, with interactive guides',
-                           'Call or book with one tap',
-                           'Team, Google reviews and opening hours in one place',
-                           'A video introduction to your clinic, if you want one']},
-               {'title': 'Mosques and Islamic communities',
-                'lead': 'A site the committee runs itself, with no expensive monthly subscription.',
-                'points': ['Prayer times, announcements and gallery',
+EN_DATA = {'audiences': [{'title': 'Businesses',
+                'lead': 'In a few seconds, a customer sees what you do, where you are and how to '
+                        'reach you.',
+                'points': ['Services or offer explained simply',
+                           'Call or message with one tap',
+                           'Opening hours, map and Google reviews in one place',
+                           'Video introduction, if you want one']},
+               {'title': 'Organisations and associations',
+                'lead': 'A site you run yourselves, with no expensive monthly subscription.',
+                'points': ['Announcements, events and gallery',
                            'Online membership, fees and donations',
-                           'A simple admin where the committee posts updates',
-                           'In Bosnian and the language of the country you live in']}],
+                           'A simple admin where you publish yourselves',
+                           'In one or more languages']}],
  'featured': [{'tag': 'MOSQUE COMMUNITY · DORNBIRN, AUSTRIA',
                'name': 'Džemat Izet Nanić',
                'text': 'A new site for the community, with prayer times, announcements and online '
-                       'membership. The committee posts updates through a simple admin, and the site moved '
-                       'off Wix to fast hosting with no monthly subscription.',
+                       'membership. The committee posts updates through a simple admin, and the '
+                       'site moved off Wix to fast hosting with no monthly subscription.',
                'points': ['Prayer times', 'Online membership', 'Committee admin', 'Newsletter'],
                'url': 'https://dzematizetnanic.com',
                'linkLabel': 'Visit the site',
                'domain': 'dzematizetnanic.com',
                'altDesktop': 'Džemat Izet Nanić site on a computer',
                'altMobile': 'Džemat Izet Nanić site on a phone',
-               'img': 'dzemat'},
+               'img': 'dzemat',
+               'more': '/en/dzemati/',
+               'moreLabel': 'Websites for mosques'},
               {'tag': 'DENTAL CLINIC · SARAJEVO',
                'name': 'Dr. Ganibegović',
-               'text': 'A new site for an orthodontic and dental clinic: treatments explained clearly, a '
-                       'section for children, Google reviews and one-tap calling.',
+               'text': 'A new site for an orthodontic and dental clinic: treatments explained '
+                       'clearly, a section for children, Google reviews and one-tap calling.',
                'points': ['Orthodontics', 'For children', 'Google reviews', 'One-tap calling'],
                'url': 'https://stomatolog-ganibegovic.loco-moshe.workers.dev',
                'linkLabel': 'See the site',
                'domain': 'stomatolog.ba',
                'altDesktop': 'Dr. Ganibegović clinic site on a computer',
                'altMobile': 'Dr. Ganibegović clinic site on a phone',
-               'img': 'stomatolog'}],
+               'img': 'stomatolog',
+               'more': '/en/ordinacije/',
+               'moreLabel': 'Websites for clinics'}],
  'more': [{'tag': 'WEB APP',
            'name': 'GentleBond',
-           'text': 'An app that helps families find nearby friends for their older loved ones, for coffee, '
-                   'walks and conversation.',
+           'text': 'An app that helps families find nearby friends for their older loved ones, for '
+                   'coffee, walks and conversation.',
            'url': 'https://kindred-connect-elders.vercel.app',
            'linkLabel': 'See the app',
            'domain': 'gentlebond',
@@ -386,38 +410,39 @@ EN_DATA = {'audiences': [{'title': 'Dental clinics',
           {'name': 'Monthly animation pack', 'price': '100', 'unit': 'per month'}],
  'packages': [{'name': 'Editing your footage',
                'price': '100',
-               'text': '1 reel up to 30 seconds; up to 10 minutes of supplied footage. You send the clips '
-                       'and a brief; simple editing included.',
+               'text': '1 reel up to 30 seconds; up to 10 minutes of supplied footage. You send '
+                       'the clips and a brief; simple editing included.',
                'badge': ''},
               {'name': 'One reel',
                'price': '200',
-               'text': '1 vertical video of 15–30 seconds. Up to 1 hour of filming at one location in '
-                       'Sarajevo.',
+               'text': '1 vertical video of 15–30 seconds. Up to 1 hour of filming at one location '
+                       'in Sarajevo.',
                'badge': ''},
               {'name': 'Three reels',
                'price': '450',
-               'text': '3 vertical videos of 15–30 seconds each. One visit, up to 2 hours of filming at one '
-                       'location.',
+               'text': '3 vertical videos of 15–30 seconds each. One visit, up to 2 hours of '
+                       'filming at one location.',
                'badge': 'BEST TO START WITH'},
               {'name': 'Short ad',
                'price': '450',
-               'text': '1 promo video of 30–60 seconds with a call to action. Short concept, up to 2 hours '
-                       'of filming; one chosen format.',
+               'text': '1 promo video of 30–60 seconds with a call to action. Short concept, up to '
+                       '2 hours of filming; one chosen format.',
                'badge': ''},
               {'name': 'Restaurant spotlight',
                'price': '650',
-               'text': '1 promo video of 30–60 seconds + 2 reels of 15–20 seconds. Up to 3 hours of filming '
-                       'at one location; reels cut from the same footage.',
+               'text': '1 promo video of 30–60 seconds + 2 reels of 15–20 seconds. Up to 3 hours '
+                       'of filming at one location; reels cut from the same footage.',
                'badge': ''},
               {'name': 'Monthly starter',
                'price': '500',
-               'text': '4 reels of 15–30 seconds, one a week. One visit a month, up to 2 hours of filming at '
-                       'one location. For smaller cafés, salons and shops.',
+               'text': '4 reels of 15–30 seconds, one a week. One visit a month, up to 2 hours of '
+                       'filming at one location. For smaller cafés, salons and shops.',
                'badge': ''},
               {'name': 'Monthly content',
                'price': '800',
-               'text': '6 reels of 15–30 seconds and a simple posting plan. One visit a month, up to 4 hours '
-                       'of filming at one location. For restaurants and larger businesses.',
+               'text': '6 reels of 15–30 seconds and a simple posting plan. One visit a month, up '
+                       'to 4 hours of filming at one location. For restaurants and larger '
+                       'businesses.',
                'badge': ''}],
  'steps': [{'title': 'PLANNING', 'text': 'Goal, idea and shot list'},
            {'title': 'FILMING', 'text': 'One agreed session'},
@@ -431,27 +456,31 @@ EN_DATA = {'audiences': [{'title': 'Dental clinics',
                   'badge': '',
                   'regular': ''},
                  {'name': 'Extended website',
-                  'text': 'More pages and interactive content, like the Dr. Ganibegović clinic site.',
+                  'text': 'More pages and interactive content, like the Dr. Ganibegović clinic '
+                          'site.',
                   'main': '€1,000',
                   'alt': '2,000 KM',
                   'hot': False,
                   'badge': '',
                   'regular': ''},
                  {'name': 'Website with admin system',
-                  'text': 'Membership, online applications, announcements and emails, with an admin where '
-                          'you post updates yourself.',
+                  'text': 'Membership, online applications, announcements and emails, with an '
+                          'admin where you post updates yourself.',
                   'main': '€3,000',
                   'alt': '6,000 KM',
                   'hot': False,
                   'badge': '',
-                  'regular': ''},
-                 {'name': 'For mosques',
-                  'text': 'The full admin system, as on the Džemat Izet Nanić site, at a special price for '
-                          'communities.',
-                  'main': '€1,800',
-                  'alt': '3,500 KM',
-                  'hot': True,
-                  'badge': 'SPECIAL PRICE',
-                  'regular': '€3,000'}],
- 'care': {'main': '€20', 'alt': '40 KM'}}
+                  'regular': ''}],
+ 'care': {'main': '€20', 'alt': '40 KM'},
+ 'solutions': [{'href': '/en/ordinacije/',
+                'title': 'Dental clinics',
+                'text': 'A website and Instagram video for clinics in Sarajevo and Bosnia.',
+                'link': 'See the offer for clinics',
+                'img': 'stomatolog'},
+               {'href': '/en/dzemati/',
+                'title': 'Mosques and Islamic communities',
+                'text': 'A website with an admin the committee runs itself, with no yearly '
+                        'subscription. A special price for mosques.',
+                'link': 'See the offer for mosques',
+                'img': 'dzemat'}]}
 

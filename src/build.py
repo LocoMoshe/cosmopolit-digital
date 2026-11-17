@@ -12,6 +12,7 @@ from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 import content
 import content_dzemati
+import content_ordinacije
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
@@ -50,6 +51,12 @@ def main():
                                (content_dzemati.EN, PUBLIC / "en" / "dzemati" / "index.html", "../../", "../")]:
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(dz.render(t=t, root=root, home=home, **SETTINGS, **SNIPPETS), encoding="utf-8")
+        print("wrote", out.relative_to(ROOT))
+    od = env.get_template("ordinacije.html.j2")
+    for t, out, root, home in [(content_ordinacije.BS, PUBLIC / "ordinacije" / "index.html", "../", "../"),
+                               (content_ordinacije.EN, PUBLIC / "en" / "ordinacije" / "index.html", "../../", "../")]:
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(od.render(t=t, root=root, home=home, **SETTINGS, **SNIPPETS), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
 
 
