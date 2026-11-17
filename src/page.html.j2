@@ -20,6 +20,9 @@
 <link rel="apple-touch-icon" href="{{ root }}apple-touch-icon.png">
 <link rel="preload" href="{{ root }}assets/fonts/poppins-bold.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="{{ root }}assets/css/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Cosmopolit Digital","url":"{{ site_url }}/","logo":"{{ site_url }}/assets/img/icon-512.png","image":"{{ site_url }}/assets/img/og.jpg","description":{{ t.description|tojson }},"telephone":"+{{ phone_intl }}","email":"{{ email }}","address":{"@type":"PostalAddress","addressLocality":"Sarajevo","addressCountry":"BA"},"areaServed":["BA","AT","DE","CH"],"founder":{"@type":"Person","name":"Haris Hadrović","sameAs":"https://www.linkedin.com/in/harishadrovic"},"sameAs":["https://www.instagram.com/cosmopolit.digital/"],"knowsLanguage":["bs","en","de"]}
+</script>
 </head>
 <body>
 <a class="skip" href="#main">{{ t.skip }}</a>

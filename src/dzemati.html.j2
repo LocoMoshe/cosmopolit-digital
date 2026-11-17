@@ -19,6 +19,9 @@
 <link rel="apple-touch-icon" href="{{ root }}apple-touch-icon.png">
 <link rel="preload" href="{{ root }}assets/fonts/poppins-bold.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="{{ root }}assets/css/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":{{ t.title|tojson }},"description":{{ t.description|tojson }},"url":"{{ site_url }}{{ t.path }}","inLanguage":"{{ t.lang }}","serviceType":"Web design","areaServed":["AT","DE","CH","BA"],"offers":{"@type":"Offer","price":"1800","priceCurrency":"EUR"},"provider":{"@type":"ProfessionalService","name":"Cosmopolit Digital","url":"{{ site_url }}/","telephone":"+{{ phone_intl }}","email":"{{ email }}"}}
+</script>
 </head>
 <body>
 <a class="skip" href="#main">{{ t.skip }}</a>
@@ -71,8 +74,8 @@
     <div class="hero-visual">
       <div class="devices">
         <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>admin</span></div>
-          <img src="{{ root }}assets/img/dz/admin-home.jpg" alt="" width="1400" height="875" fetchpriority="high"></div>
-        <div class="phone"><img src="{{ root }}assets/img/dz/admin-mobile.jpg" alt="" width="750" height="1630"></div>
+          <img src="{{ root }}assets/img/dz/admin-home.jpg" alt="{{ t.altHero }}" width="1400" height="875" fetchpriority="high"></div>
+        <div class="phone"><img src="{{ root }}assets/img/dz/admin-mobile.jpg" alt="{{ t.altAdminMobile }}" width="750" height="1630"></div>
       </div>
     </div>
   </div>
@@ -147,7 +150,7 @@
       </div>
       <div class="feature-shot">
         <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>admin</span></div>
-          <img src="{{ root }}assets/img/dz/{{ b.img }}.jpg" alt="" width="1400" height="875" loading="lazy"></div>
+          <img src="{{ root }}assets/img/dz/{{ b.img }}.jpg" alt="{{ b.alt }}" width="1400" height="875" loading="lazy"></div>
       </div>
     </article>
     {% endfor %}
@@ -163,11 +166,11 @@
 <section class="wrap section" style="padding-top:72px;padding-bottom:112px">
   <div class="grid-2 phones-row">
     <div class="phone-pair">
-      <img src="{{ root }}assets/img/dz/admin-mobile.jpg" alt="" width="750" height="1630" loading="lazy">
+      <img src="{{ root }}assets/img/dz/admin-mobile.jpg" alt="{{ t.altAdminMobile }}" width="750" height="1630" loading="lazy">
       <div><h3>{{ t.mobileTitle }}</h3><p class="muted">{{ t.mobileText }}</p></div>
     </div>
     <div class="phone-pair">
-      <img src="{{ root }}assets/img/dz/site-clanstvo.jpg" alt="" width="750" height="1630" loading="lazy">
+      <img src="{{ root }}assets/img/dz/site-clanstvo.jpg" alt="{{ t.altSite }}" width="750" height="1630" loading="lazy">
       <div><h3>{{ t.siteTitle }}</h3><p class="muted">{{ t.siteText }}</p></div>
     </div>
   </div>

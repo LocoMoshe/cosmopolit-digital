@@ -2,7 +2,7 @@
 """All page copy. Edit text here, then run: python3 src/build.py"""
 
 BS = {'lang': 'bs',
- 'title': 'Cosmopolit Digital – web stranice i video',
+ 'title': 'Izrada web stranica i video za biznis, Sarajevo | Cosmopolit Digital',
  'navLabel': 'Glavni meni',
  'navWeb': 'Web stranice',
  'navVideo': 'Video priče',
@@ -230,7 +230,7 @@ BS_DATA = {'audiences': [{'title': 'Stomatološke ordinacije',
  'care': {'main': '40 KM', 'alt': '20 €'}}
 
 EN = {'lang': 'en',
- 'title': 'Cosmopolit Digital – websites and video',
+ 'title': 'Websites and video for businesses, Sarajevo | Cosmopolit Digital',
  'navLabel': 'Main menu',
  'navWeb': 'Websites',
  'navVideo': 'Video stories',
