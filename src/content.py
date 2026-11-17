@@ -94,7 +94,9 @@ BS = {'lang': 'bs',
  'navDz': 'Džemati',
  'solEyebrow': 'POSEBNA RJEŠENJA',
  'solTitle': 'Za ordinacije i džemate.',
- 'solLead': 'Za ove dvije oblasti imam gotova rješenja, primjere i posebne cijene.'}
+ 'solLead': 'Za ove dvije oblasti imam gotova rješenja, primjere i posebne cijene.',
+ 'reelsEyebrow': 'IZ NAŠIH VIDEA',
+ 'reelsTitle': 'Šta smo snimili.'}
 
 BS_DATA = {'audiences': [{'title': 'Biznisi',
                 'lead': 'Klijent za par sekundi vidi šta radite, gdje ste i kako da vas '
@@ -241,7 +243,12 @@ BS_DATA = {'audiences': [{'title': 'Biznisi',
                 'text': 'Stranica s adminom koju odbor vodi sam, bez godišnje pretplate. Posebna '
                         'cijena za džemate.',
                 'link': 'Pogledajte ponudu za džemate',
-                'img': 'dzemat'}]}
+                'img': 'dzemat'}],
+ 'reels': [{'file': 'automatic', 'title': 'Lifestyle reel', 'tag': 'REEL'},
+           {'file': 'bazerdzan', 'title': 'Bazerdžan, prostor radnje', 'tag': 'PROMO'},
+           {'file': 'reel-3', 'title': 'Snimak događaja', 'tag': 'EVENT'},
+           {'file': 'renki', 'title': 'Ulica Titova iz zraka', 'tag': 'DRON'},
+           {'file': 'fasada', 'title': 'Nova fasada', 'tag': 'DRON'}]}
 
 EN = {'lang': 'en',
  'title': 'Websites and video for businesses, Sarajevo | Cosmopolit Digital',
@@ -335,7 +342,9 @@ EN = {'lang': 'en',
  'navDz': 'Mosques',
  'solEyebrow': 'SPECIAL SOLUTIONS',
  'solTitle': 'For clinics and mosques.',
- 'solLead': 'For these two areas I have ready-made solutions, examples and special prices.'}
+ 'solLead': 'For these two areas I have ready-made solutions, examples and special prices.',
+ 'reelsEyebrow': 'FROM OUR WORK',
+ 'reelsTitle': 'What we have filmed.'}
 
 EN_DATA = {'audiences': [{'title': 'Businesses',
                 'lead': 'In a few seconds, a customer sees what you do, where you are and how to '
@@ -482,5 +491,10 @@ EN_DATA = {'audiences': [{'title': 'Businesses',
                 'text': 'A website with an admin the committee runs itself, with no yearly '
                         'subscription. A special price for mosques.',
                 'link': 'See the offer for mosques',
-                'img': 'dzemat'}]}
+                'img': 'dzemat'}],
+ 'reels': [{'file': 'automatic', 'title': 'Lifestyle reel', 'tag': 'REEL'},
+           {'file': 'bazerdzan', 'title': 'Bazerdžan, the shop', 'tag': 'PROMO'},
+           {'file': 'reel-3', 'title': 'Event coverage', 'tag': 'EVENT'},
+           {'file': 'renki', 'title': 'Titova Street from above', 'tag': 'DRONE'},
+           {'file': 'fasada', 'title': 'New facade', 'tag': 'DRONE'}]}
 

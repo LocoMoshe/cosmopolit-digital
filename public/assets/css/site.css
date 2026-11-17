@@ -350,3 +350,10 @@ i.pb-a{background:#B9B6C9}i.pb-b{background:var(--orange)}
 .header-right .btn{white-space:nowrap}
 .more-grid .more-link{margin-top:auto;padding-top:6px;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--ink);text-decoration:none;align-self:flex-start;border-bottom:2px solid var(--orange)}
 .more-grid .more-link:hover{color:var(--orange-text)}
+/* reels on homepage */
+.reels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.reel video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:20px;background:#11133F;border:1px solid var(--line)}
+.reel figcaption{margin-top:12px;font-size:15px;font-weight:500;line-height:1.35}
+.reel figcaption span{display:block;color:var(--orange);font-size:12px;font-weight:700;letter-spacing:.2em;margin-bottom:4px}
+@media (max-width:900px){.reels{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.reel{flex:0 0 58%;scroll-snap-align:start}}
+.reel{margin:0;min-width:0}

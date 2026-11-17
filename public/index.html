@@ -240,6 +240,33 @@
     <ul class="chips"><li>RESTORANI</li><li>KAFIĆI</li><li>SALONI</li><li>LOKALNI BRENDOVI</li></ul>
 
     <div class="block-head">
+      <p class="eyebrow">IZ NAŠIH VIDEA</p>
+      <h3 class="h-sm">Šta smo snimili.</h3>
+    </div>
+    <div class="reels">
+      <figure class="reel">
+        <video src="assets/video/automatic.mp4" poster="assets/video/automatic.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>REEL</span>Lifestyle reel</figcaption>
+      </figure>
+      <figure class="reel">
+        <video src="assets/video/bazerdzan.mp4" poster="assets/video/bazerdzan.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>PROMO</span>Bazerdžan, prostor radnje</figcaption>
+      </figure>
+      <figure class="reel">
+        <video src="assets/video/reel-3.mp4" poster="assets/video/reel-3.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>EVENT</span>Snimak događaja</figcaption>
+      </figure>
+      <figure class="reel">
+        <video src="assets/video/renki.mp4" poster="assets/video/renki.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>DRON</span>Ulica Titova iz zraka</figcaption>
+      </figure>
+      <figure class="reel">
+        <video src="assets/video/fasada.mp4" poster="assets/video/fasada.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>DRON</span>Nova fasada</figcaption>
+      </figure>
+    </div>
+
+    <div class="block-head">
       <p class="eyebrow">POČETNE CIJENE U KM</p>
       <h3 class="h-sm">Odaberite svoj paket.</h3>
     </div>
@@ -380,6 +407,9 @@
   b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
   n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
 })();
+</script>
+<script>
+document.querySelectorAll('.reel video').forEach(function(v){v.addEventListener('play',function(){document.querySelectorAll('.reel video').forEach(function(o){if(o!==v)o.pause()})})});
 </script>
 </body>
 </html>

@@ -204,6 +204,19 @@
     <ul class="chips">{% for c in d.videoFor %}<li>{{ c }}</li>{% endfor %}</ul>
 
     <div class="block-head">
+      <p class="eyebrow">{{ t.reelsEyebrow }}</p>
+      <h3 class="h-sm">{{ t.reelsTitle }}</h3>
+    </div>
+    <div class="reels">
+      {% for r in d.reels %}
+      <figure class="reel">
+        <video src="{{ root }}assets/video/{{ r.file }}.mp4" poster="{{ root }}assets/video/{{ r.file }}.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>{{ r.tag }}</span>{{ r.title }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+
+    <div class="block-head">
       <p class="eyebrow">{{ t.pkgEyebrow }}</p>
       <h3 class="h-sm">{{ t.pkgTitle }}</h3>
     </div>
@@ -308,6 +321,9 @@
   b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
   n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
 })();
+</script>
+<script>
+document.querySelectorAll('.reel video').forEach(function(v){v.addEventListener('play',function(){document.querySelectorAll('.reel video').forEach(function(o){if(o!==v)o.pause()})})});
 </script>
 </body>
 </html>

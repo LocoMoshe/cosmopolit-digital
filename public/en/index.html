@@ -238,6 +238,33 @@
     <ul class="chips"><li>RESTAURANTS</li><li>CAFÉS</li><li>SALONS</li><li>LOCAL BRANDS</li></ul>
 
     <div class="block-head">
+      <p class="eyebrow">FROM OUR WORK</p>
+      <h3 class="h-sm">What we have filmed.</h3>
+    </div>
+    <div class="reels">
+      <figure class="reel">
+        <video src="../assets/video/automatic.mp4" poster="../assets/video/automatic.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>REEL</span>Lifestyle reel</figcaption>
+      </figure>
+      <figure class="reel">
+        <video src="../assets/video/bazerdzan.mp4" poster="../assets/video/bazerdzan.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>PROMO</span>Bazerdžan, the shop</figcaption>
+      </figure>
+      <figure class="reel">
+        <video src="../assets/video/reel-3.mp4" poster="../assets/video/reel-3.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>EVENT</span>Event coverage</figcaption>
+      </figure>
+      <figure class="reel">
+        <video src="../assets/video/renki.mp4" poster="../assets/video/renki.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>DRONE</span>Titova Street from above</figcaption>
+      </figure>
+      <figure class="reel">
+        <video src="../assets/video/fasada.mp4" poster="../assets/video/fasada.jpg" controls playsinline preload="none" width="720" height="1280"></video>
+        <figcaption><span>DRONE</span>New facade</figcaption>
+      </figure>
+    </div>
+
+    <div class="block-head">
       <p class="eyebrow">STARTING PRICES IN KM</p>
       <h3 class="h-sm">Choose your package.</h3>
     </div>
@@ -378,6 +405,9 @@
   b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
   n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
 })();
+</script>
+<script>
+document.querySelectorAll('.reel video').forEach(function(v){v.addEventListener('play',function(){document.querySelectorAll('.reel video').forEach(function(o){if(o!==v)o.pause()})})});
 </script>
 </body>
 </html>
