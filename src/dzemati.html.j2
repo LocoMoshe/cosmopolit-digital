@@ -172,6 +172,24 @@
     </div>
   </div>
 </section>
+
+<!-- VALUE -->
+<section id="vrijednost" class="wrap section" style="padding-top:24px;padding-bottom:112px">
+  <p class="eyebrow" style="margin-bottom:16px">{{ t.valueEyebrow }}</p>
+  <h2 class="h-lg" style="max-width:860px">{{ t.valueTitle }}</h2>
+  <p class="sub" style="margin-top:18px;max-width:640px;font-size:17px">{{ t.valueLead }}</p>
+  <div class="value-table card-light">
+    <div class="vt-row vt-head"><span>{{ t.valueColA }}</span><span>{{ t.valueColB }}</span><span>{{ t.valueColC }}</span></div>
+    {% for r in t.valueRows %}
+    <div class="vt-row"><span><strong>{{ r.t }}</strong><small>{{ r.s }}</small></span><span class="vt-else" data-label="{{ t.valueColB }}">{{ r.b }}</span><span class="vt-us" data-label="{{ t.valueColC }}">{{ arrow_check|safe }}{{ r.c }}</span></div>
+    {% endfor %}
+    <div class="vt-row vt-total"><span>{{ t.valueTotalA }}</span><span class="vt-else">{{ t.valueTotalB }}</span><span class="vt-us">{{ t.valueTotalC }}</span></div>
+  </div>
+  <div class="value-extra card-light">
+    <div><h3>{{ t.valueExtraTitle }}</h3><p class="muted">{{ t.valueExtraText }}</p></div>
+    <p class="value-extra-price">{{ t.valueExtraPrice }}</p>
+  </div>
+</section>
 </div>
 
 <!-- PRICE -->
