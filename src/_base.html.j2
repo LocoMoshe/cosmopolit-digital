@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="{{ t.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t.title }}</title>
+<meta name="description" content="{{ t.description }}">
+<meta name="theme-color" content="#0A0A22">
+<link rel="canonical" href="{{ site_url }}{{ t.path }}">
+{% for hl, href in hreflangs %}<link rel="alternate" hreflang="{{ hl }}" href="{{ site_url }}{{ href }}">
+{% endfor %}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ t.title }}">
+<meta property="og:description" content="{{ t.description }}">
+<meta property="og:image" content="{{ site_url }}{{ og_image }}">
+<meta property="og:url" content="{{ site_url }}{{ t.path }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ root }}favicon-32.png">
+<link rel="apple-touch-icon" href="{{ root }}apple-touch-icon.png">
+<link rel="preload" href="{{ root }}assets/fonts/poppins-medium.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="{{ root }}assets/css/site.css">
+{% block ld %}{% endblock %}
+</head>
+<body class="{% block bodyclass %}{% endblock %}">
+<a class="skip" href="#main">{{ t.skip }}</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ home }}" aria-label="Cosmopolit Digital">
+      <img src="{{ root }}assets/img/logo-mark.png" alt="" width="30" height="34">
+      <span>Cosmopolit Digital</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="{{ t.navLabel }}">
+      {% for href, label in nav %}<a href="{{ href }}">{{ label }}</a>{% endfor %}
+      <div class="nav-lang">
+        {% if t.lang == 'bs' %}<span aria-current="true">BS</span><a href="{{ alt_href }}" lang="en" hreflang="en">EN</a>
+        {% else %}<a href="{{ alt_href }}" lang="bs" hreflang="bs">BS</a><span aria-current="true">EN</span>{% endif %}
+      </div>
+    </nav>
+    <div class="header-right">
+      <div class="lang">
+        {% if t.lang == 'bs' %}<span aria-current="true">BS</span><a href="{{ alt_href }}" lang="en" hreflang="en">EN</a>
+        {% else %}<a href="{{ alt_href }}" lang="bs" hreflang="bs">BS</a><span aria-current="true">EN</span>{% endif %}
+      </div>
+      <a class="btn btn-orange btn-sm" href="#kontakt">{{ t.cta }}</a>
+      <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="{{ t.menu }}">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{% block main %}{% endblock %}
+
+<!-- CONTACT -->
+<section id="kontakt" class="contact-v2">
+  <div class="wrap">
+    <div class="contact-copy">
+      <h2 class="display">{{ contact_title }}</h2>
+      <p>{{ contact_text }}</p>
+    </div>
+    <div class="contact-actions">
+      <a class="phone-card" href="https://wa.me/{{ phone_intl }}{% if wa_text %}?text={{ wa_text|urlencode }}{% endif %}" target="_blank" rel="noopener"><small>Viber / WhatsApp</small><strong>{{ phone }}</strong></a>
+      <ul class="contact-list">
+        <li><a href="mailto:{{ email }}">{{ email }}</a></li>
+        <li><a href="viber://chat?number=%2B{{ phone_intl }}">Viber</a></li>
+        <li><a href="https://www.instagram.com/cosmopolit.digital/" target="_blank" rel="noopener">Instagram @cosmopolit.digital</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© {{ year }} Cosmopolit Digital · Sarajevo</span>
+    <span>{% for href, label in footer_links %}<a href="{{ href }}">{{ label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+  if(!b||!n)return;
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+})();
+</script>
+</body>
+</html>

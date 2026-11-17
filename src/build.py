@@ -12,6 +12,7 @@ from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 import content
 import content_dzemati
+import content_ordinacije
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
@@ -38,18 +39,46 @@ SNIPPETS = dict(
 def main():
     env = Environment(loader=FileSystemLoader(ROOT / "src"), autoescape=True,
                       undefined=StrictUndefined, trim_blocks=True, lstrip_blocks=True)
-    tpl = env.get_template("page.html.j2")
-    pages = [(content.BS, content.BS_DATA, PUBLIC / "index.html", "", "dzemati/"),
-             (content.EN, content.EN_DATA, PUBLIC / "en" / "index.html", "../", "dzemati/")]
-    for t, d, out, root, dz_href in pages:
+
+    def out_path(path):
+        return PUBLIC / path.strip("/") / "index.html" if path != "/" else PUBLIC / "index.html"
+
+    def root_for(path):
+        return "../" * path.strip("/").count("/") + ("../" if path != "/" else "")
+
+    hl = lambda bs, en: [("bs", bs), ("en", en), ("x-default", bs)]
+    jobs = []
+    # homepage
+    for t, alt in [(content.BS, "/en/"), (content.EN, "/")]:
+        jobs.append(("page.html.j2", t, dict(
+            nav=t["nav"], alt_href=alt, hreflangs=hl("/", "/en/"), og_image="/assets/img/og.jpg",
+            contact_title=t["contactTitle"], contact_text=t["contactText"], wa_text="",
+            footer_links=[(("/en/" if t["lang"] == "en" else "/") + "ordinacije/", "Ordinacije" if t["lang"] == "bs" else "Dental clinics"),
+                          (("/en/" if t["lang"] == "en" else "/") + "dzemati/", "Džemati" if t["lang"] == "bs" else "Mosques")])))
+    # džemati
+    for t, alt in [(content_dzemati.BS, "/en/dzemati/"), (content_dzemati.EN, "/dzemati/")]:
+        home = "/en/" if t["lang"] == "en" else "/"
+        jobs.append(("dzemati.html.j2", t, dict(
+            nav=[(home, t["navHome"]), ("#funkcije", t["navFeatures"]), ("#cijena", t["navPrice"]), ("#kontakt", t["navContact"])],
+            alt_href=alt, hreflangs=hl("/dzemati/", "/en/dzemati/"), og_image="/assets/img/dz/og-dzemati.jpg",
+            contact_title=t["contactTitle"], contact_text=t["contactText"], wa_text=t["waText"],
+            footer_links=[(home, t["footerBack"].replace("← ", ""))])))
+    # ordinacije
+    for t, alt in [(content_ordinacije.BS, "/en/ordinacije/"), (content_ordinacije.EN, "/ordinacije/")]:
+        home = "/en/" if t["lang"] == "en" else "/"
+        jobs.append(("ordinacije.html.j2", t, dict(
+            nav=[(home, t["navHome"]), ("#stranica", t["navFeatures"]), ("#video", t["navVideo"]), ("#cijene", t["navPrice"]), ("#kontakt", t["navContact"])],
+            alt_href=alt, hreflangs=hl("/ordinacije/", "/en/ordinacije/"), og_image="/assets/img/og.jpg",
+            contact_title=t["contactTitle"], contact_text=t["contactText"], wa_text=t["waText"],
+            footer_links=[(home, t["navHome"])])))
+
+    for tpl_name, t, extra in jobs:
+        out = out_path(t["path"])
+        root = root_for(t["path"])
+        home = "/en/" if t["lang"] == "en" else "/"
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(tpl.render(t=t, d=d, root=root, dz_href=dz_href, **SETTINGS, **SNIPPETS), encoding="utf-8")
-        print("wrote", out.relative_to(ROOT))
-    dz = env.get_template("dzemati.html.j2")
-    for t, out, root, home in [(content_dzemati.BS, PUBLIC / "dzemati" / "index.html", "../", "../"),
-                               (content_dzemati.EN, PUBLIC / "en" / "dzemati" / "index.html", "../../", "../")]:
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(dz.render(t=t, root=root, home=home, **SETTINGS, **SNIPPETS), encoding="utf-8")
+        html = env.get_template(tpl_name).render(t=t, root=root, home=home, **extra, **SETTINGS, **SNIPPETS)
+        out.write_text(html, encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
 
 

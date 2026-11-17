@@ -1,0 +1,115 @@
+{% extends "_base.html.j2" %}
+{% block ld %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":{{ t.title|tojson }},"description":{{ t.description|tojson }},"url":"{{ site_url }}{{ t.path }}","inLanguage":"{{ t.lang }}","serviceType":"Web design and video production for dental clinics","areaServed":["BA"],"provider":{"@type":"ProfessionalService","name":"Cosmopolit Digital","url":"{{ site_url }}/","telephone":"+{{ phone_intl }}","email":"{{ email }}"}}
+</script>
+{% endblock %}
+{% block main %}
+
+<!-- HERO -->
+<section class="lp-hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">{{ t.kicker }}</p>
+      <h1 class="display">{{ t.h1|safe }}</h1>
+      <p class="lp-lead">{{ t.lead }}</p>
+      <div class="lp-actions">
+        <a class="btn btn-orange" href="#kontakt">{{ t.cta }}</a>
+        <a class="btn btn-line" href="https://stomatolog-ganibegovic.loco-moshe.workers.dev" target="_blank" rel="noopener">{{ t.heroCta2 }} <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="lp-note">{{ t.heroNote }}</p>
+    </div>
+    <div class="lp-visual">
+      <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>stomatolog.ba</span></div>
+        <img src="{{ root }}assets/img/stomatolog-desktop.jpg" alt="{{ t.altD }}" width="1600" height="1000" fetchpriority="high"></div>
+      <div class="phone"><img src="{{ root }}assets/img/stomatolog-mobile.jpg" alt="{{ t.altM }}" width="750" height="1630"></div>
+    </div>
+  </div>
+</section>
+
+<div class="paper">
+<!-- WHAT PATIENTS WANT -->
+<section class="wrap section-v2">
+  <div class="sec-head"><h2 class="display-md">{{ t.problemTitle }}</h2></div>
+  <ul class="rows">
+    {% for a, b in t.problems %}<li><strong>{{ a }}</strong><span>{{ b }}</span></li>{% endfor %}
+  </ul>
+</section>
+
+<!-- FEATURES -->
+<section id="stranica" class="wrap section-v2 section-tight">
+  <div class="sec-head"><h2 class="display-md">{{ t.featTitle|safe }}</h2><p>{{ t.featLead }}</p></div>
+  <div class="features">
+    {% for b in t.blocks %}
+    <article class="feature{% if loop.index is even %} flip{% endif %}">
+      <div class="feature-copy">
+        <p class="num">{{ b.num }}</p>
+        <h3>{{ b.t }}</h3>
+        <p>{{ b.s }}</p>
+      </div>
+      <div class="feature-shot phones">
+        {% for img, alt in b.imgs %}<img src="{{ root }}assets/img/ord/{{ img }}.jpg" alt="{{ alt }}" width="600" height="1216" loading="lazy">{% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <h3 style="margin-top:104px;margin-bottom:20px;font-size:26px;font-weight:500;letter-spacing:-.02em">{{ t.moreTitle }}</h3>
+  <ul class="more-grid">
+    {% for a, b in t.more %}<li><strong>{{ a }}</strong><span>{{ b }}</span></li>{% endfor %}
+  </ul>
+</section>
+</div>
+
+<!-- VIDEO -->
+<section id="video" class="dark-v2">
+  <div class="wrap section-v2 video-detail">
+    <div>
+      <h2 class="display-md">{{ t.videoTitle }}</h2>
+      <p style="margin-top:20px;color:#D3D4E6;font-size:17px;font-weight:300;max-width:440px">{{ t.videoLead }}</p>
+      <div class="gear-v2" style="margin-top:36px;max-width:440px">
+        <figure><img src="{{ root }}assets/img/gear-c100.jpg" alt="Canon C100 II" width="400" height="370" loading="lazy"><figcaption><strong>Canon C100 II</strong></figcaption></figure>
+        <figure><img src="{{ root }}assets/img/gear-mini5.jpg" alt="DJI Mini 5 Pro" width="400" height="370" loading="lazy"><figcaption><strong>DJI Mini 5 Pro</strong></figcaption></figure>
+      </div>
+    </div>
+    <ol class="steps-v2" style="align-self:center">
+      {% for a, b in t.videoIdeas %}<li><b>{{ loop.index }}</b><span><strong>{{ a }}</strong>{{ b }}</span></li>{% endfor %}
+    </ol>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="cijene" class="paper">
+  <div class="wrap section-v2">
+    <div class="sec-head"><h2 class="display-md">{{ t.priceTitle }}</h2><p>{{ t.priceLead }}</p></div>
+    <div class="services">
+      <div class="service">
+        <h3>{{ t.priceWeb }}</h3>
+        <ul class="price-list">{% for n, d, p in t.webPrices %}<li><span><strong>{{ n }}</strong><small>{{ d }}</small></span><b>{{ p }}</b></li>{% endfor %}</ul>
+      </div>
+      <div class="service">
+        <h3>{{ t.priceVideo }}</h3>
+        <ul class="price-list">{% for n, d, p in t.videoPrices %}<li><span><strong>{{ n }}</strong><small>{{ d }}</small></span><b>{{ p }}</b></li>{% endfor %}</ul>
+      </div>
+    </div>
+    <ul class="rows" style="margin-top:72px">
+      {% for a, b in t.terms %}<li><strong>{{ a }}</strong><span>{{ b }}</span></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- STEPS + FAQ -->
+<section class="dark-v2">
+  <div class="wrap section-v2">
+    <div class="two-col" style="margin-top:0">
+      <div>
+        <h3 class="label-h">{{ t.stepsTitle }}</h3>
+        <ol class="steps-v2">{% for s in t.steps %}<li><b>{{ loop.index }}</b><span><strong>{{ s.t }}</strong>{{ s.s }}</span></li>{% endfor %}</ol>
+      </div>
+      <div>
+        <h3 class="label-h">{{ t.faqTitle }}</h3>
+        <div class="faq">{% for f in t.faq %}<details><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

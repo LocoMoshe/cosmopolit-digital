@@ -1,290 +1,124 @@
-<!doctype html>
-<html lang="{{ t.lang }}">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ t.title }}</title>
-<meta name="description" content="{{ t.description }}">
-<meta name="theme-color" content="#0A0A22">
-<link rel="canonical" href="{{ site_url }}{{ t.path }}">
-<link rel="alternate" hreflang="bs" href="{{ site_url }}/">
-<link rel="alternate" hreflang="en" href="{{ site_url }}/en/">
-<link rel="alternate" hreflang="x-default" href="{{ site_url }}/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="{{ t.title }}">
-<meta property="og:description" content="{{ t.description }}">
-<meta property="og:image" content="{{ site_url }}/assets/img/og.jpg">
-<meta property="og:url" content="{{ site_url }}{{ t.path }}">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ root }}favicon-32.png">
-<link rel="apple-touch-icon" href="{{ root }}apple-touch-icon.png">
-<link rel="preload" href="{{ root }}assets/fonts/poppins-bold.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="{{ root }}assets/css/site.css">
+{% extends "_base.html.j2" %}
+{% block ld %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Cosmopolit Digital","url":"{{ site_url }}/","logo":"{{ site_url }}/assets/img/icon-512.png","image":"{{ site_url }}/assets/img/og.jpg","description":{{ t.description|tojson }},"telephone":"+{{ phone_intl }}","email":"{{ email }}","address":{"@type":"PostalAddress","addressLocality":"Sarajevo","addressCountry":"BA"},"areaServed":["BA","AT","DE","CH"],"founder":{"@type":"Person","name":"Haris Hadrović","sameAs":"https://www.linkedin.com/in/harishadrovic"},"sameAs":["https://www.instagram.com/cosmopolit.digital/"],"knowsLanguage":["bs","en","de"]}
 </script>
-</head>
-<body>
-<a class="skip" href="#main">{{ t.skip }}</a>
-
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="#top" aria-label="Cosmopolit Digital">
-      <img src="{{ root }}assets/img/logo-mark.png" alt="" width="34" height="38">
-      <span>COSMOPOLIT DIGITAL</span>
-    </a>
-    <nav class="nav" id="nav" aria-label="{{ t.navLabel }}">
-      <a href="#web">{{ t.navWeb }}</a>
-      <a href="#video">{{ t.navVideo }}</a>
-      <a href="#radovi">{{ t.navWork }}</a>
-      <a href="{{ dz_href }}">{{ t.navDzemati }}</a>
-      <a href="#kontakt">{{ t.navContact }}</a>
-      <div class="nav-lang">
-        {% if t.lang == 'bs' %}<span aria-current="true">BS</span><a href="{{ root }}en/" lang="en" hreflang="en">EN</a>
-        {% else %}<a href="{{ root }}" lang="bs" hreflang="bs">BS</a><span aria-current="true">EN</span>{% endif %}
-      </div>
-    </nav>
-    <div class="header-right">
-      <div class="lang">
-        {% if t.lang == 'bs' %}<span aria-current="true">BS</span><a href="{{ root }}en/" lang="en" hreflang="en">EN</a>
-        {% else %}<a href="{{ root }}" lang="bs" hreflang="bs">BS</a><span aria-current="true">EN</span>{% endif %}
-      </div>
-      <a class="btn btn-orange" href="#kontakt">{{ t.cta }}</a>
-      <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="{{ t.menu }}">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main id="main">
+{% endblock %}
+{% block main %}
 
 <!-- HERO -->
-<section id="top" class="hero has-mark">
-  <img class="mark" src="{{ root }}assets/img/logo-mark.png" alt="" aria-hidden="true" style="right:-180px;top:40px">
+<section class="hero-v2">
   <div class="wrap">
-    <div class="hero-copy">
-      <p class="eyebrow">{{ t.heroEyebrow }}</p>
-      <h1 class="h-xl">{{ t.heroTitle }}</h1>
-      <p class="lead">{{ t.heroLead }}</p>
-      <p class="sub">{{ t.heroSub }}</p>
-      <div class="doors">
-        <a class="door" href="#web"><strong>{{ t.doorWeb }} {{ arrow|safe }}</strong><small>{{ t.doorWebSub }}</small></a>
-        <a class="door" href="#video"><strong>{{ t.doorVideo }} {{ arrow|safe }}</strong><small>{{ t.doorVideoSub }}</small></a>
+    <h1 class="display">{{ t.h1|safe }}</h1>
+    <div class="hero-row">
+      <p class="hero-lead">{{ t.lead }}</p>
+      <div class="hero-actions">
+        <a class="btn btn-orange" href="#radovi">{{ t.heroBtn }} <span aria-hidden="true">↓</span></a>
+        <a class="btn btn-line" href="https://wa.me/{{ phone_intl }}" target="_blank" rel="noopener">{{ t.heroWa }} {{ phone }}</a>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="devices">
-        <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>stomatolog.ba</span></div>
-          <img src="{{ root }}assets/img/stomatolog-desktop.jpg" alt="{{ t.altHeroDesktop }}" width="800" height="500" fetchpriority="high"></div>
-        <div class="phone"><img src="{{ root }}assets/img/gentlebond-mobile.jpg" alt="{{ t.altHeroMobile }}" width="375" height="812"></div>
-      </div>
-    </div>
+    <p class="hero-recent"><span>{{ t.recentLabel }}</span>{% for c in t.cases %}<a href="#case-{{ loop.index }}">{{ c.name }}</a>{% endfor %}</p>
   </div>
 </section>
 
-<!-- WEB -->
-<div class="light">
-<section id="web" class="wrap section">
-  <p class="eyebrow" style="margin-bottom:16px">{{ t.webEyebrow }}</p>
-  <h2 class="h-lg" style="max-width:820px">{{ t.webTitle }}</h2>
-  <p class="sub" style="margin-top:22px;max-width:620px;font-size:18px">{{ t.webLead }}</p>
-  <div class="grid-2" style="margin-top:48px">
-    {% for a in d.audiences %}
-    <div class="card-light audience">
-      <h3>{{ a.title }}</h3>
-      <p class="muted">{{ a.lead }}</p>
-      <ul class="checks">{% for p in a.points %}<li>{{ p }}</li>{% endfor %}</ul>
-      {% if loop.index == 2 %}<a class="link-arrow" href="{{ dz_href }}">{{ t.dzLink }} {{ arrow_sm|safe }}</a>{% endif %}
+<!-- WORK -->
+<section id="radovi" class="paper">
+  <div class="wrap section-v2">
+    <div class="sec-head">
+      <h2 class="display-md">{{ t.workTitle }}</h2>
+      <p>{{ t.workLead }}</p>
     </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section id="radovi" class="wrap section" style="padding-top:72px">
-  <div class="section-head">
-    <h2 class="h-md">{{ t.workTitle }}</h2>
-    <p class="muted">{{ t.workLead }}</p>
-  </div>
-  <div class="projects">
-    {% for p in d.featured %}
-    <article class="card-light project">
-      <div class="project-copy">
-        <p class="tag">{{ p.tag }}</p>
-        <h3>{{ p.name }}</h3>
-        <p class="muted">{{ p.text }}</p>
-        <ul class="pills">{% for x in p.points %}<li>{{ x }}</li>{% endfor %}</ul>
-        <a class="link-arrow" href="{{ p.url }}" target="_blank" rel="noopener">{{ p.linkLabel }} {{ arrow_sm|safe }}</a>
+    <div class="cases">
+    {% for c in t.cases %}
+    <article class="case{% if loop.index > 2 %} case-sm{% endif %}" id="case-{{ loop.index }}">
+      <div class="case-visual">
+        <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>{{ c.domain }}</span></div>
+          <img src="{{ root }}assets/img/{{ c.img }}-desktop.jpg" alt="{{ c.altD }}" width="1600" height="1000" {% if loop.index > 1 %}loading="lazy"{% else %}fetchpriority="high"{% endif %}></div>
+        <div class="phone"><img src="{{ root }}assets/img/{{ c.img }}-mobile.jpg" alt="{{ c.altM }}" width="750" height="1630" loading="lazy"></div>
       </div>
-      <div class="devices">
-        <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>{{ p.domain }}</span></div>
-          <img src="{{ root }}assets/img/{{ p.img }}-desktop.jpg" alt="{{ p.altDesktop }}" width="800" height="500" loading="lazy"></div>
-        <div class="phone"><img src="{{ root }}assets/img/{{ p.img }}-mobile.jpg" alt="{{ p.altMobile }}" width="375" height="812" loading="lazy"></div>
+      <div class="case-info">
+        <div class="case-name"><h3>{{ c.name }}</h3><span>{{ c.place }}</span></div>
+        <p class="case-text">{{ c.text }}</p>
+        <div class="case-links">
+          <a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.urlLabel }} <span aria-hidden="true">↗</span></a>
+          {% if c.more %}<a href="{{ c.more }}">{{ c.moreLabel }} <span aria-hidden="true">→</span></a>{% endif %}
+        </div>
       </div>
     </article>
     {% endfor %}
-    <div class="grid-2" style="gap:28px">
-      {% for p in d.more %}
-      <article class="card-light project-small">
-        <div class="devices small">
-          <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>{{ p.domain }}</span></div>
-            <img src="{{ root }}assets/img/{{ p.img }}-desktop.jpg" alt="{{ p.altDesktop }}" width="800" height="500" loading="lazy"></div>
-          <div class="phone"><img src="{{ root }}assets/img/{{ p.img }}-mobile.jpg" alt="{{ p.altMobile }}" width="375" height="812" loading="lazy"></div>
-        </div>
-        <div class="project-copy">
-          <p class="tag">{{ p.tag }}</p>
-          <h3>{{ p.name }}</h3>
-          <p class="muted">{{ p.text }}</p>
-          <a class="link-arrow" href="{{ p.url }}" target="_blank" rel="noopener">{{ p.linkLabel }} {{ arrow_sm|safe }}</a>
-        </div>
-      </article>
-      {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="wrap section" style="padding-top:72px;padding-bottom:112px" aria-labelledby="web-cijene">
-  <div class="section-head">
-    <h2 class="h-md" id="web-cijene">{{ t.webPriceTitle }}</h2>
-    <p class="muted">{{ t.webPriceLead }}</p>
-  </div>
-  <div class="grid-2 web-prices">
-    {% for k in d.webPackages %}
-    <div class="{% if k.hot %}price price-dark{% else %}card-light price{% endif %}">
-      {% if k.badge %}<span class="badge">{{ k.badge }}</span>{% endif %}
-      <h3>{{ k.name }}</h3>
-      <p class="amount"><small class="{% if not k.hot %}muted{% endif %}">{{ t.from }} </small>{{ k.main }} <small class="alt">/ {{ k.alt }}</small></p>
-      {% if k.regular %}<p class="regular">{{ t.regular }} {{ t.from }} {{ k.regular }}</p>{% endif %}
-      <p class="{% if not k.hot %}muted{% endif %} desc">{{ k.text }}</p>
+<!-- SERVICES -->
+<section id="usluge" class="paper">
+  <div class="wrap section-v2 section-tight">
+    <div class="sec-head">
+      <h2 class="display-md">{{ t.servicesTitle|safe }}</h2>
+      <p>{{ t.servicesLead }}</p>
     </div>
-    {% endfor %}
+    <div class="services">
+      <div class="service">
+        <h3>{{ t.webTitle }}</h3>
+        <p class="service-text">{{ t.webText }}</p>
+        <ul class="price-list">
+          {% for n, d, p in t.webPrices %}<li><span><strong>{{ n }}</strong><small>{{ d }}</small></span><b>{{ p }}</b></li>{% endfor %}
+        </ul>
+        <p class="service-note">{{ t.webTerms }}</p>
+      </div>
+      <div class="service">
+        <h3>{{ t.videoTitle }}</h3>
+        <p class="service-text">{{ t.videoText }}</p>
+        <ul class="price-list">
+          {% for n, d, p in t.videoPrices %}<li><span><strong>{{ n }}</strong><small>{{ d }}</small></span><b>{{ p }}</b></li>{% endfor %}
+        </ul>
+        <p class="service-note">{{ t.videoIncl }}</p>
+        <p class="service-note">{{ t.videoExtra }}</p>
+      </div>
+    </div>
   </div>
-  <div class="care card-light">
-    <div><h3>{{ t.careTitle }}</h3><p class="muted">{{ t.careText }}</p></div>
-    <p class="amount">{{ d.care.main }} <small class="muted">{{ t.careUnit }} · {{ d.care.alt }}</small></p>
-  </div>
-  <h3 class="terms-title">{{ t.termsTitle }}</h3>
-  <ul class="terms">
-    {% for x in t.terms %}<li><strong>{{ x.t }}</strong><span class="muted">{{ x.s }}</span></li>{% endfor %}
-  </ul>
 </section>
-</div>
 
-<!-- VIDEO -->
-<section id="video" class="video has-mark">
-  <img class="mark" src="{{ root }}assets/img/logo-mark.png" alt="" aria-hidden="true" style="left:-220px;top:120px;width:640px;opacity:.04">
-  <div class="wrap">
-    <p class="eyebrow" style="margin-bottom:16px">{{ t.videoEyebrow }}</p>
-    <h2 class="h-xl" style="font-size:clamp(40px,5.4vw,76px)">{{ t.videoTitle }}</h2>
-    <p class="lead">{{ t.videoLead }}</p>
-    <p class="sub">{{ t.videoSub }}</p>
-    <ul class="chips">{% for c in d.videoFor %}<li>{{ c }}</li>{% endfor %}</ul>
-
-    <div class="block-head">
-      <p class="eyebrow">{{ t.pkgEyebrow }}</p>
-      <h3 class="h-sm">{{ t.pkgTitle }}</h3>
+<!-- VIDEO DETAIL -->
+<section class="dark-v2">
+  <div class="wrap section-v2 video-detail">
+    <div>
+      <h3 class="label-h">{{ t.stepsTitle }}</h3>
+      <ol class="steps-v2">{% for s, d in t.steps %}<li><b>{{ loop.index }}</b><span><strong>{{ s }}</strong>{{ d }}</span></li>{% endfor %}</ol>
     </div>
-    <div class="packages">
-      {% for k in d.packages %}
-      <div class="pkg{% if k.badge %} hot{% endif %}">
-        {% if k.badge %}<span class="badge">{{ k.badge }}</span>{% endif %}
-        <div class="pkg-top">
-          <h4>{{ k.name }}</h4>
-          <p class="pkg-price"><small>{{ t.from }} </small><b>{{ k.price }}</b> KM</p>
-        </div>
-        <p>{{ k.text }}</p>
+    <div>
+      <h3 class="label-h">{{ t.gearTitle }}</h3>
+      <div class="gear-v2">
+        {% for img, n, d in t.gear %}<figure><img src="{{ root }}assets/img/{{ img }}.jpg" alt="{{ n }}" width="400" height="370" loading="lazy"><figcaption><strong>{{ n }}</strong>{{ d }}</figcaption></figure>{% endfor %}
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section id="rjesenja" class="paper">
+  <div class="wrap section-v2">
+    <div class="sec-head">
+      <h2 class="display-md">{{ t.solTitle|safe }}</h2>
+      <p>{{ t.solLead }}</p>
+    </div>
+    <div class="solutions">
+      {% for href, n, d in t.solutions %}
+      <a class="solution" href="{{ href }}"><span><strong>{{ n }}</strong><small>{{ d }}</small></span><i aria-hidden="true">→</i></a>
       {% endfor %}
-    </div>
-
-    <div class="split">
-      <div>
-        <p class="eyebrow" style="margin-bottom:8px">{{ t.inclEyebrow }}</p>
-        <h3 class="h-sm" style="margin-bottom:22px">{{ t.inclTitle }}</h3>
-        <ul class="checks big">{% for x in d.included %}<li>{{ x }}</li>{% endfor %}</ul>
-      </div>
-      <div class="stack">
-        <div class="box hot lg-rows">
-          <p class="eyebrow">{{ t.extraEyebrow }}</p>
-          <div class="row"><span>{{ t.extra1 }}</span><b>80 KM</b></div>
-          <div class="row"><span>{{ t.extra2 }}</span><b>40 KM{{ t.perHour }}</b></div>
-          <p class="note">{{ t.extraNote }}</p>
-        </div>
-        <div class="box">
-          <p class="eyebrow">{{ t.animEyebrow }}</p>
-          {% for a in d.anim %}<div class="row"><span>{{ a.name }}</span><span class="muted"><small>{{ t.from }} </small><b>{{ a.price }} KM</b> <small>{{ a.unit }}</small></span></div>{% endfor %}
-          <p class="note">{{ t.animNote }}</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="split" style="margin-top:88px">
-      <div>
-        <p class="eyebrow" style="margin-bottom:8px">{{ t.procEyebrow }}</p>
-        <h3 class="h-sm" style="margin-bottom:28px">{{ t.procTitle }}</h3>
-        <ol class="steps">{% for s in d.steps %}<li><span class="num" aria-hidden="true">{{ loop.index }}</span><span><strong>{{ s.title }}</strong><span>{{ s.text }}</span></span></li>{% endfor %}</ol>
-        <p class="fineprint">{{ t.procNote }}</p>
-      </div>
-      <div>
-        <p class="eyebrow" style="margin-bottom:8px">{{ t.gearEyebrow }}</p>
-        <h3 class="h-sm" style="margin-bottom:28px">{{ t.gearTitle }}</h3>
-        <div class="stack">
-          <div class="box gear"><img src="{{ root }}assets/img/gear-c100.jpg" alt="Canon C100 Mark II" width="406" height="376" loading="lazy"><div><p class="gear-label">{{ t.gearCamLabel }}</p><p class="gear-name">Canon C100 II</p><p class="muted" style="margin-top:6px;font-weight:300">{{ t.gearCam }}</p></div></div>
-          <div class="box gear"><img src="{{ root }}assets/img/gear-mini5.jpg" alt="DJI Mini 5 Pro" width="394" height="353" loading="lazy"><div><p class="gear-label">{{ t.gearDroneLabel }}</p><p class="gear-name">DJI Mini 5 Pro</p><p class="muted" style="margin-top:6px;font-weight:300">{{ t.gearDrone }}</p></div></div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="o-nama" class="about">
-  <div class="wrap">
-    <img class="about-avatar" src="{{ root }}assets/img/haris.jpg" alt="{{ t.aboutAlt }}" width="800" height="1000" loading="lazy">
-    <div class="about-copy">
-      <p class="eyebrow" style="margin-bottom:10px">{{ t.aboutEyebrow }}</p>
-      <h2 class="about-h">{{ t.aboutTitle }}</h2>
-      {% for p in t.aboutParas %}<p class="about-p">{{ p }}</p>{% endfor %}
-      <p class="about-sign"><strong>{{ t.aboutSign }}</strong> · <span>{{ t.aboutRole }}</span></p>
+<section id="o-meni" class="paper">
+  <div class="wrap section-v2 section-tight about-v2">
+    <img src="{{ root }}assets/img/haris.jpg" alt="{{ t.aboutAlt }}" width="800" height="1000" loading="lazy">
+    <div>
+      <h2 class="display-md">{{ t.aboutTitle }}</h2>
+      {% for p in t.aboutParas %}<p>{{ p }}</p>{% endfor %}
+      <p class="about-sign"><strong>{{ t.aboutSign }}</strong>, {{ t.aboutRole }}</p>
     </div>
   </div>
 </section>
-
-<!-- CONTACT -->
-<section id="kontakt" class="contact">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow" style="margin-bottom:14px">{{ t.contactEyebrow }}</p>
-      <h2 class="h-xl" style="font-size:clamp(40px,5vw,68px)">{{ t.contactTitle }}</h2>
-      <p class="muted" style="margin:22px 0 18px;font-size:18px">{{ t.contactSend }}</p>
-      <ol class="ask">{% for q in d.ask %}<li><span class="num" aria-hidden="true">{{ loop.index }}</span>{{ q }}</li>{% endfor %}</ol>
-    </div>
-    <div>
-      <a class="phone-card" href="https://wa.me/{{ phone_intl }}" target="_blank" rel="noopener"><small>VIBER / WHATSAPP</small><strong>{{ phone }}</strong></a>
-      <div class="contact-links">
-        <a class="btn btn-ghost" href="https://www.instagram.com/cosmopolit.digital/" target="_blank" rel="noopener">{{ ig_icon|safe }}@cosmopolit.digital</a>
-        <a class="btn btn-ghost" href="viber://chat?number=%2B{{ phone_intl }}">{{ viber_icon|safe }}Viber</a>
-        {% if email %}<a class="btn btn-ghost" href="mailto:{{ email }}">{{ mail_icon|safe }}{{ email }}</a>{% endif %}
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <span>COSMOPOLIT DIGITAL · {{ phone }}</span>
-    <span style="letter-spacing:.04em">© {{ year }} · <a href="https://www.linkedin.com/in/harishadrovic" target="_blank" rel="noopener">Haris Hadrović</a></span>
-  </div>
-</footer>
-
-<script>
-(function(){
-  var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
-  if(!b||!n)return;
-  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
-  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
-})();
-</script>
-</body>
-</html>
+{% endblock %}
