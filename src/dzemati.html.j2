@@ -81,8 +81,21 @@
   </div>
 </section>
 
-<!-- PROBLEM -->
 <div class="light">
+<!-- PHONES (admin in your pocket -> what the community sees) -->
+<section class="wrap section phones-flow" style="padding-top:72px;padding-bottom:24px">
+  <div class="phone-pair">
+    <img src="{{ root }}assets/img/dz/admin-mobile.jpg" alt="{{ t.altAdminMobile }}" width="750" height="1630">
+    <div><h3>{{ t.mobileTitle }}</h3><p class="muted">{{ t.mobileText }}</p></div>
+  </div>
+  <span class="flow-arrow" aria-hidden="true">{{ arrow|safe }}</span>
+  <div class="phone-pair">
+    <img src="{{ root }}assets/img/dz/site-clanstvo.jpg" alt="{{ t.altSite }}" width="750" height="1630">
+    <div><h3>{{ t.siteTitle }}</h3><p class="muted">{{ t.siteText }}</p></div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
 <section class="wrap section">
   <p class="eyebrow" style="margin-bottom:16px">{{ t.problemEyebrow }}</p>
   <h2 class="h-md" style="max-width:760px">{{ t.problemTitle }}</h2>
@@ -161,20 +174,6 @@
   <ul class="more-grid">
     {% for m in t.more %}<li><strong>{{ m.t }}</strong><span class="muted">{{ m.s }}</span>{% if m.link %}<a class="more-link" href="{{ m.link }}" target="_blank" rel="noopener">{{ t.liveShort }} {{ arrow_sm|safe }}</a>{% endif %}</li>{% endfor %}
   </ul>
-</section>
-
-<!-- PHONES -->
-<section class="wrap section" style="padding-top:72px;padding-bottom:112px">
-  <div class="grid-2 phones-row">
-    <div class="phone-pair">
-      <img src="{{ root }}assets/img/dz/admin-mobile.jpg" alt="{{ t.altAdminMobile }}" width="750" height="1630" loading="lazy">
-      <div><h3>{{ t.mobileTitle }}</h3><p class="muted">{{ t.mobileText }}</p></div>
-    </div>
-    <div class="phone-pair">
-      <img src="{{ root }}assets/img/dz/site-clanstvo.jpg" alt="{{ t.altSite }}" width="750" height="1630" loading="lazy">
-      <div><h3>{{ t.siteTitle }}</h3><p class="muted">{{ t.siteText }}</p></div>
-    </div>
-  </div>
 </section>
 
 <!-- VALUE -->
