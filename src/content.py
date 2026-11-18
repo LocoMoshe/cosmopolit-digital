@@ -252,7 +252,6 @@ BS_DATA = {'audiences': [{'title': 'Biznisi',
            {'file': 'garden-full', 'title': 'Garden of Dreams, full event coverage', 'tag': 'EVENT'},
            {'file': 'so-agency', 'title': 'So Agency', 'tag': 'PROMO'},
            {'file': 'clip-1', 'title': 'Mjesec nad gradom', 'tag': 'KADROVI'},
-           {'file': 'clip-2', 'title': 'Izlazak sunca', 'tag': 'KADROVI'},
            {'file': 'clip-3', 'title': 'Jutro na rijeci', 'tag': 'KADROVI'}]}
 
 EN = {'lang': 'en',
@@ -505,6 +504,5 @@ EN_DATA = {'audiences': [{'title': 'Businesses',
            {'file': 'garden-full', 'title': 'Garden of Dreams, full event coverage', 'tag': 'EVENT'},
            {'file': 'so-agency', 'title': 'So Agency', 'tag': 'PROMO'},
            {'file': 'clip-1', 'title': 'Moon over the city', 'tag': 'FOOTAGE'},
-           {'file': 'clip-2', 'title': 'Sunrise', 'tag': 'FOOTAGE'},
            {'file': 'clip-3', 'title': 'Morning on the river', 'tag': 'FOOTAGE'}]}
 
