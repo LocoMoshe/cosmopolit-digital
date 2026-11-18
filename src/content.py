@@ -248,7 +248,12 @@ BS_DATA = {'audiences': [{'title': 'Biznisi',
            {'file': 'bazerdzan', 'title': 'Bazerdžan, prostor radnje', 'tag': 'PROMO'},
            {'file': 'reel-3', 'title': 'Al Jazeera Documentary Film Festival', 'tag': 'EVENT'},
            {'file': 'renki', 'title': 'Garden of Dreams, SFF closing event (ArtBat)', 'tag': 'DRON'},
-           {'file': 'fasada', 'title': 'Nova fasada', 'tag': 'DRON'}]}
+           {'file': 'fasada', 'title': 'Nova fasada', 'tag': 'DRON'},
+           {'file': 'garden-full', 'title': 'Garden of Dreams, full event coverage', 'tag': 'EVENT'},
+           {'file': 'so-agency', 'title': 'So Agency', 'tag': 'PROMO'},
+           {'file': 'clip-1', 'title': 'Mjesec nad gradom', 'tag': 'KADROVI'},
+           {'file': 'clip-2', 'title': 'Izlazak sunca', 'tag': 'KADROVI'},
+           {'file': 'clip-3', 'title': 'Jutro na rijeci', 'tag': 'KADROVI'}]}
 
 EN = {'lang': 'en',
  'title': 'Websites and video for businesses, Sarajevo | Cosmopolit Digital',
@@ -496,5 +501,10 @@ EN_DATA = {'audiences': [{'title': 'Businesses',
            {'file': 'bazerdzan', 'title': 'Bazerdžan, the shop', 'tag': 'PROMO'},
            {'file': 'reel-3', 'title': 'Al Jazeera Documentary Film Festival', 'tag': 'EVENT'},
            {'file': 'renki', 'title': 'Garden of Dreams, SFF closing event (ArtBat)', 'tag': 'DRONE'},
-           {'file': 'fasada', 'title': 'New facade', 'tag': 'DRONE'}]}
+           {'file': 'fasada', 'title': 'New facade', 'tag': 'DRONE'},
+           {'file': 'garden-full', 'title': 'Garden of Dreams, full event coverage', 'tag': 'EVENT'},
+           {'file': 'so-agency', 'title': 'So Agency', 'tag': 'PROMO'},
+           {'file': 'clip-1', 'title': 'Moon over the city', 'tag': 'FOOTAGE'},
+           {'file': 'clip-2', 'title': 'Sunrise', 'tag': 'FOOTAGE'},
+           {'file': 'clip-3', 'title': 'Morning on the river', 'tag': 'FOOTAGE'}]}
 
