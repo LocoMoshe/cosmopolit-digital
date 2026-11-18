@@ -24,6 +24,8 @@ SETTINGS = dict(
     email="info@cosmopolitdigital.com",  # forwards to cosmopolit.digital@gmail.com (Cloudflare Email Routing)
     year=datetime.date.today().year,
 )
+import hashlib
+SETTINGS["css_v"] = hashlib.md5((PUBLIC / "assets" / "css" / "site.css").read_bytes()).hexdigest()[:8]
 
 ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">{}</svg>'
 SNIPPETS = dict(

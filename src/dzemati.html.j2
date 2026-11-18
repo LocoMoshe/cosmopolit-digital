@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ root }}favicon-32.png">
 <link rel="apple-touch-icon" href="{{ root }}apple-touch-icon.png">
 <link rel="preload" href="{{ root }}assets/fonts/poppins-bold.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="{{ root }}assets/css/site.css">
+<link rel="stylesheet" href="{{ root }}assets/css/site.css?v={{ css_v }}">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Service","name":{{ t.title|tojson }},"description":{{ t.description|tojson }},"url":"{{ site_url }}{{ t.path }}","inLanguage":"{{ t.lang }}","serviceType":"Web design","areaServed":["AT","DE","CH","BA"],"offers":{"@type":"Offer","price":"1800","priceCurrency":"EUR"},"provider":{"@type":"ProfessionalService","name":"Cosmopolit Digital","url":"{{ site_url }}/","telephone":"+{{ phone_intl }}","email":"{{ email }}"}}
 </script>
