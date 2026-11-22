@@ -107,7 +107,7 @@ BS = {'lang': 'bs',
              't': 'Vaktija za cijelu godinu odjednom',
              's': 'Učitate PDF vaktije ili zalijepite tabelu s islam.ba, i vremena namaza su na početnoj '
                   'stranici za svaki dan. Vrijeme džume mijenjate u jednom polju. Džematlije mogu preuzeti '
-                  'godišnju vaktiju kao PDF, u dizajnu vašeg džemata.',
+                  'godišnju vaktiju kao PDF, u dizajnu vašeg džemata. Uz vaktiju je i kibla kompas.',
              'link': 'https://dzematizetnanic.com/'},
             {'img': 'admin-hitno',
              'alt': 'Admin: hitno obavještenje za dženazu ili promjenu namaza',
@@ -153,6 +153,10 @@ BS = {'lang': 'bs',
            's': 'Nakon objave hutbe jedno dugme kopira gotov tekst za WhatsApp kanal, a hutba ide i e-mailom '
                 'svima na listi.',
            'link': ''},
+          {'t': 'Kibla kompas',
+           's': 'Kompas na mobitelu pokazuje smjer Kabe, odakle god da ste. Do njega se stiže jednim dodirom '
+                'iz vaktije na početnoj.',
+           'link': 'https://dzematizetnanic.com/kibla.html'},
           {'t': 'Online članstvo',
            's': 'Prijave stižu u admin i na e-mail džemata. Bez easyVereina i sličnih servisa.',
            'link': 'https://dzematizetnanic.com/clanstvo.html'},
@@ -196,7 +200,7 @@ BS = {'lang': 'bs',
                 'c': 'uključeno'},
                {'t': 'Vaktija za cijelu godinu',
                 's': 'Prikaz na početnoj, vrijeme džume i godišnja vaktija u PDF-u, u dizajnu džemata, za '
-                     'preuzimanje',
+                     'preuzimanje, uz kibla kompas',
                 'b': 'uz dodatnu programersku izradu',
                 'c': 'uključeno'},
                {'t': 'Ramazanska vaktija',
@@ -377,7 +381,7 @@ EN = {'lang': 'en',
              't': 'Prayer times for the whole year at once',
              's': 'Upload the timetable PDF or paste the table, and the daily prayer times appear on the '
                   'homepage. Jumu’ah time is a single field. Visitors can download the yearly timetable as a '
-                  'PDF in your mosque’s design.',
+                  'PDF in your mosque’s design. A Qibla compass sits right next to the prayer times.',
              'link': 'https://dzematizetnanic.com/'},
             {'img': 'admin-hitno',
              'alt': 'Admin: urgent notice for a funeral or prayer change',
@@ -424,6 +428,10 @@ EN = {'lang': 'en',
            's': 'After posting a khutbah, one button copies ready text for your WhatsApp channel, and the '
                 'khutbah also goes by email to everyone on the list.',
            'link': ''},
+          {'t': 'Qibla compass',
+           's': 'A compass on the phone shows the direction of the Kaaba, wherever you are. It is one tap '
+                'away from the prayer times on the homepage.',
+           'link': 'https://dzematizetnanic.com/kibla.html'},
           {'t': 'Online membership',
            's': 'Applications arrive in the admin and in the mosque’s inbox. No extra membership service '
                 'needed.',
@@ -471,7 +479,7 @@ EN = {'lang': 'en',
                 'c': 'included'},
                {'t': 'Prayer times for the whole year',
                 's': 'Shown on the homepage, Jumu’ah time, and a yearly timetable PDF in your mosque’s '
-                     'design to download',
+                     'design to download, plus a Qibla compass',
                 'b': 'extra development',
                 'c': 'included'},
                {'t': 'Ramadan timetable',
