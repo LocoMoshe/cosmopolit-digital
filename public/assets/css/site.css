@@ -384,3 +384,11 @@ i.pb-a{background:#B9B6C9}i.pb-b{background:var(--orange)}
 @media (max-width:860px){.solutions-top{grid-template-columns:1fr;gap:16px;padding-top:40px}.sol-card{gap:18px;padding:18px}.sol-card img{width:76px}.sol-card h2{font-size:22px}}
 .btn-sm{min-height:40px;padding:0 18px;font-size:14px}
 .btn-orange svg path{stroke:var(--navy)}
+/* džemati: small prayer-times + Qibla card */
+.qibla-card{display:flex;align-items:center;gap:22px;margin-top:96px;padding:28px;background:#fff;border-radius:var(--radius);box-shadow:0 0 0 1px var(--paper-line);text-decoration:none;color:var(--ink);transition:box-shadow .15s}
+.qibla-card:hover{box-shadow:0 0 0 2px var(--orange)}
+.qibla-card img{flex:none;width:130px;height:250px;object-fit:cover;object-position:top;border-radius:20px;border:5px solid var(--navy)}
+.qibla-card div{margin-left:14px;max-width:520px}
+.qibla-card h3{font-size:24px;font-weight:700;letter-spacing:-.01em}
+.qibla-card p{margin:10px 0 14px;line-height:1.6}
+@media (max-width:640px){.qibla-card{flex-wrap:wrap;gap:14px;padding:20px}.qibla-card img{width:calc(50% - 7px);height:auto;aspect-ratio:375/700}.qibla-card div{margin-left:0}}

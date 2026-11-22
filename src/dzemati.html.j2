@@ -170,6 +170,11 @@
     {% endfor %}
   </div>
 
+  <a class="qibla-card" href="https://dzematizetnanic.com/kibla.html" target="_blank" rel="noopener">
+    <img src="{{ root }}assets/img/dz/vaktija-kartica.jpg" alt="{{ t.qiblaAltA }}" width="358" height="681" loading="lazy">
+    <img src="{{ root }}assets/img/dz/kibla-mobile.jpg" alt="{{ t.qiblaAltB }}" width="390" height="844" loading="lazy">
+    <div><h3>{{ t.qiblaTitle }}</h3><p class="muted">{{ t.qiblaText }}</p><span class="link-arrow">{{ t.liveLabel }} {{ arrow_sm|safe }}</span></div>
+  </a>
   <h3 class="h-sm" style="margin-top:96px;margin-bottom:28px">{{ t.moreTitle }}</h3>
   <ul class="more-grid">
     {% for m in t.more %}<li><strong>{{ m.t }}</strong><span class="muted">{{ m.s }}</span>{% if m.link %}<a class="more-link" href="{{ m.link }}" target="_blank" rel="noopener">{{ t.liveShort }} {{ arrow_sm|safe }}</a>{% endif %}</li>{% endfor %}

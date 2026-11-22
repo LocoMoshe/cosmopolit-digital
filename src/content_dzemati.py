@@ -153,10 +153,6 @@ BS = {'lang': 'bs',
            's': 'Nakon objave hutbe jedno dugme kopira gotov tekst za WhatsApp kanal, a hutba ide i e-mailom '
                 'svima na listi.',
            'link': ''},
-          {'t': 'Kibla kompas',
-           's': 'Kompas na mobitelu pokazuje smjer Kabe, odakle god da ste. Do njega se stiže jednim dodirom '
-                'iz vaktije na početnoj.',
-           'link': 'https://dzematizetnanic.com/kibla.html'},
           {'t': 'Online članstvo',
            's': 'Prijave stižu u admin i na e-mail džemata. Bez easyVereina i sličnih servisa.',
            'link': 'https://dzematizetnanic.com/clanstvo.html'},
@@ -274,7 +270,12 @@ BS = {'lang': 'bs',
  'waText': 'Selam, zanima nas web stranica za džemat.',
  'footerBack': '← Nazad na početnu',
  'liveLabel': 'Pogledajte na stranici džemata',
- 'liveShort': 'Pogledajte uživo'}
+ 'liveShort': 'Pogledajte uživo',
+ 'qiblaTitle': 'Vaktija i kibla, uvijek pri ruci',
+ 'qiblaText': 'Na početnoj su današnja vremena namaza i sljedeći namaz. Jednim dodirom otvara se kompas koji '
+              'na mobitelu pokazuje smjer Kabe, odakle god da ste.',
+ 'qiblaAltA': 'Vaktija na početnoj stranici s dugmetom za kiblu',
+ 'qiblaAltB': 'Kibla kompas na mobitelu'}
 
 EN = {'lang': 'en',
  'path': '/en/dzemati/',
@@ -428,10 +429,6 @@ EN = {'lang': 'en',
            's': 'After posting a khutbah, one button copies ready text for your WhatsApp channel, and the '
                 'khutbah also goes by email to everyone on the list.',
            'link': ''},
-          {'t': 'Qibla compass',
-           's': 'A compass on the phone shows the direction of the Kaaba, wherever you are. It is one tap '
-                'away from the prayer times on the homepage.',
-           'link': 'https://dzematizetnanic.com/kibla.html'},
           {'t': 'Online membership',
            's': 'Applications arrive in the admin and in the mosque’s inbox. No extra membership service '
                 'needed.',
@@ -556,4 +553,9 @@ EN = {'lang': 'en',
  'waText': 'Salaam, we are interested in a website for our mosque.',
  'footerBack': '← Back to homepage',
  'liveLabel': 'See it on the live site',
- 'liveShort': 'See it live'}
+ 'liveShort': 'See it live',
+ 'qiblaTitle': 'Prayer times and Qibla, always at hand',
+ 'qiblaText': 'The homepage shows today’s prayer times and the next prayer. One tap opens a compass that '
+              'shows the direction of the Kaaba on the phone, wherever you are.',
+ 'qiblaAltA': 'Prayer times on the homepage with the Qibla button',
+ 'qiblaAltB': 'Qibla compass on a phone'}
