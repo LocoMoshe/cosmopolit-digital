@@ -276,15 +276,13 @@ BS = {'lang': 'bs',
  'liveLabel': 'Pogledajte na stranici džemata',
  'liveShort': 'Pogledajte uživo',
  'qiblaTitle': 'Vaktija i kibla, uvijek pri ruci',
- 'qiblaText': 'Na početnoj su današnja vremena namaza i sljedeći namaz. Jednim dodirom otvara se kompas koji '
-              'na mobitelu pokazuje smjer Kabe, odakle god da ste.',
+ 'qiblaText': 'Današnji namazi i sljedeći namaz na početnoj, a jednim dodirom kompas koji pokazuje smjer '
+              'Kabe.',
  'qiblaAltA': 'Vaktija na početnoj stranici s dugmetom za kiblu',
  'qiblaAltB': 'Kibla kompas na mobitelu',
- 'notifTitle': 'Obavještenja stižu na telefon, kao iz aplikacije',
- 'notifText': 'Džematlije sačuvaju stranicu na početni ekran telefona i uključe obavještenja. Kad odbor '
-              'objavi dženazu, promjenu namaza, hutbu ili događaj, obavještenje stiže odmah. Mogu uključiti '
-              'i podsjetnik za namaz. Radi na iPhoneu i Androidu, besplatno, bez aplikacije iz trgovine, bez '
-              'imena i e-maila.',
+ 'notifTitle': 'Obavještenja na telefon, bez aplikacije',
+ 'notifText': 'Dženaza, hutba ili događaj stižu džematlijama kao obavještenje, uz podsjetnik za namaz. Samo '
+              'sačuvaju stranicu na početni ekran.',
  'notifAlt': 'Uključivanje obavještenja i podsjetnika za namaz na telefonu',
  'notifLink': 'https://dzematizetnanic.com/notifikacije.html'}
 
@@ -570,14 +568,12 @@ EN = {'lang': 'en',
  'liveLabel': 'See it on the live site',
  'liveShort': 'See it live',
  'qiblaTitle': 'Prayer times and Qibla, always at hand',
- 'qiblaText': 'The homepage shows today’s prayer times and the next prayer. One tap opens a compass that '
-              'shows the direction of the Kaaba on the phone, wherever you are.',
+ 'qiblaText': 'Today’s prayers and the next prayer on the homepage, and one tap opens a compass pointing to '
+              'the Kaaba.',
  'qiblaAltA': 'Prayer times on the homepage with the Qibla button',
  'qiblaAltB': 'Qibla compass on a phone',
- 'notifTitle': 'Notifications on the phone, just like an app',
- 'notifText': 'The community saves the site to their phone’s home screen and turns on notifications. When '
-              'the committee posts a funeral notice, a change in prayer times, a khutbah or an event, the '
-              'notification arrives straight away. They can also turn on prayer reminders. It works on '
-              'iPhone and Android, free, with no app-store app, no name and no email.',
+ 'notifTitle': 'Phone notifications, no app needed',
+ 'notifText': 'Funeral notices, khutbahs and events reach the community as notifications, plus prayer '
+              'reminders. They just save the site to their home screen.',
  'notifAlt': 'Turning on notifications and prayer reminders on a phone',
  'notifLink': 'https://dzematizetnanic.com/notifikacije.html'}

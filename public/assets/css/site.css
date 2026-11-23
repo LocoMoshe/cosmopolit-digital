@@ -395,3 +395,14 @@ i.pb-a{background:#B9B6C9}i.pb-b{background:var(--orange)}
 .phones-flow .notif-card{grid-column:1/-1;margin-top:24px}
 .notif-card div{max-width:720px}
 @media (max-width:640px){.notif-card img{width:46%;}}
+/* džemati: two "hit" cards under the admin/site flow */
+.phones-flow .hits{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}
+.hit-card{display:flex;align-items:center;gap:24px;padding:24px;background:#fff;border-radius:var(--radius);box-shadow:0 0 0 1px var(--paper-line);text-decoration:none;color:var(--ink);transition:box-shadow .15s}
+.hit-card:hover{box-shadow:0 0 0 2px var(--orange)}
+.hit-shots{flex:none;display:flex;gap:10px}
+.hit-shots img{width:104px;height:200px;object-fit:cover;object-position:top;border-radius:16px;border:4px solid var(--navy)}
+.hit-card h3{font-size:21px;font-weight:700;line-height:1.25}
+.hit-card p{margin:8px 0 12px;line-height:1.55;font-size:15px}
+@media (max-width:980px){.phones-flow .hits{grid-template-columns:1fr}}
+@media (max-width:560px){.hit-card{gap:16px;padding:18px}.hit-shots img{width:78px;height:150px}}
+@media (max-width:560px){.hit-card{flex-direction:column;align-items:flex-start}.hit-shots img{width:110px;height:200px}}
