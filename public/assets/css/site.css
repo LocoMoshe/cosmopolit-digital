@@ -392,3 +392,6 @@ i.pb-a{background:#B9B6C9}i.pb-b{background:var(--orange)}
 .qibla-card h3{font-size:24px;font-weight:700;letter-spacing:-.01em}
 .qibla-card p{margin:10px 0 14px;line-height:1.6}
 @media (max-width:640px){.qibla-card{flex-wrap:wrap;gap:14px;padding:20px}.qibla-card img{width:calc(50% - 7px);height:auto;aspect-ratio:375/700}.qibla-card div{margin-left:0}}
+.phones-flow .notif-card{grid-column:1/-1;margin-top:24px}
+.notif-card div{max-width:720px}
+@media (max-width:640px){.notif-card img{width:46%;}}

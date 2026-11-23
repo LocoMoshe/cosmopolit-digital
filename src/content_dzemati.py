@@ -190,6 +190,10 @@ BS = {'lang': 'bs',
                 's': 'Obavještenja, hutbe, albumi, termini, vakifi, više urednika',
                 'b': 'od 8.000 €',
                 'c': 'uključeno'},
+               {'t': 'Obavještenja na telefon',
+                's': 'Dženaze, hutbe i događaji stižu kao obavještenje, plus podsjetnik za namaz',
+                'b': 'zasebna aplikacija za iPhone i Android',
+                'c': 'uključeno'},
                {'t': 'Članstvo i mailing lista',
                 's': 'Online prijave, e-mail obavještenja, uvoz starih lista',
                 'b': '120–420 € godišnje',
@@ -275,7 +279,14 @@ BS = {'lang': 'bs',
  'qiblaText': 'Na početnoj su današnja vremena namaza i sljedeći namaz. Jednim dodirom otvara se kompas koji '
               'na mobitelu pokazuje smjer Kabe, odakle god da ste.',
  'qiblaAltA': 'Vaktija na početnoj stranici s dugmetom za kiblu',
- 'qiblaAltB': 'Kibla kompas na mobitelu'}
+ 'qiblaAltB': 'Kibla kompas na mobitelu',
+ 'notifTitle': 'Obavještenja stižu na telefon, kao iz aplikacije',
+ 'notifText': 'Džematlije sačuvaju stranicu na početni ekran telefona i uključe obavještenja. Kad odbor '
+              'objavi dženazu, promjenu namaza, hutbu ili događaj, obavještenje stiže odmah. Mogu uključiti '
+              'i podsjetnik za namaz. Radi na iPhoneu i Androidu, besplatno, bez aplikacije iz trgovine, bez '
+              'imena i e-maila.',
+ 'notifAlt': 'Uključivanje obavještenja i podsjetnika za namaz na telefonu',
+ 'notifLink': 'https://dzematizetnanic.com/notifikacije.html'}
 
 EN = {'lang': 'en',
  'path': '/en/dzemati/',
@@ -470,6 +481,10 @@ EN = {'lang': 'en',
                 's': 'Announcements, khutbahs, albums, timetables, donors, several editors',
                 'b': 'from €8,000',
                 'c': 'included'},
+               {'t': 'Phone notifications',
+                's': 'Funeral notices, khutbahs and events arrive as notifications, plus prayer reminders',
+                'b': 'a separate app for iPhone and Android',
+                'c': 'included'},
                {'t': 'Membership and mailing list',
                 's': 'Online applications, email notices, import of old lists',
                 'b': '€120–420 a year',
@@ -558,4 +573,11 @@ EN = {'lang': 'en',
  'qiblaText': 'The homepage shows today’s prayer times and the next prayer. One tap opens a compass that '
               'shows the direction of the Kaaba on the phone, wherever you are.',
  'qiblaAltA': 'Prayer times on the homepage with the Qibla button',
- 'qiblaAltB': 'Qibla compass on a phone'}
+ 'qiblaAltB': 'Qibla compass on a phone',
+ 'notifTitle': 'Notifications on the phone, just like an app',
+ 'notifText': 'The community saves the site to their phone’s home screen and turns on notifications. When '
+              'the committee posts a funeral notice, a change in prayer times, a khutbah or an event, the '
+              'notification arrives straight away. They can also turn on prayer reminders. It works on '
+              'iPhone and Android, free, with no app-store app, no name and no email.',
+ 'notifAlt': 'Turning on notifications and prayer reminders on a phone',
+ 'notifLink': 'https://dzematizetnanic.com/notifikacije.html'}
